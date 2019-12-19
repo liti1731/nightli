@@ -1,0 +1,94 @@
+/*=========================================
+	new_section
+==========================================*/
+
+#name__this__section {
+    padding: 0;
+    background-color: #2c2f31;
+}
+
+#name__this__section h2 {
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=========================================
+	form
+==========================================*/
+
+.login-form {}
+
+.login-form h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 25px;
+}
+
+.login-form .input-group {
+    width: 100%;
+}
+
+.login-form .form-control {
+    border-color: -moz-use-text-color -moz-use-text-color #cccccc;
+    border-radius: 0;
+    border-style: none none solid;
+    border-width: 0 0 1px;
+    box-shadow: none;
+    margin-bottom: 10px;
+}
+
+.login-form .input-field {
+    width: 48%;
+    float: left;
+    margin-right: 4%;
+}
+
+.login-form .input-field:last-child {
+    margin-right: 0;
+}
+
+.login-form .form-control.error {
+    border-bottom-color: #c0392b;
+}
+
+.login-form #form-submit {
+    background: url("../../img/envelop.png") no-repeat scroll 0 15px transparent;
+    border: 0 none;
+    color: #fefefe;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px;
+    text-align: right;
+    width: 85px;
+}
+
+
+label.error {
+    color: #c0392b;
+    font-weight: normal;
+    text-transform: capitalize;
+}
