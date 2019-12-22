@@ -45,7 +45,7 @@ $(document).ready(function(){
         window.location.href = "./index.html";
     });
     $('.linkfix-contact a').on('click',function() {
-        window.location.href = "./index.html#contact";
+        window.location.href = "./index.html#nightlife";
     });
     $('.linkfix-login a').on('click',function() {
         window.location.href = "./login.html";

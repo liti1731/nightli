@@ -25,7 +25,6 @@
 	<link
 		href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,900&display=swap"
 		rel="stylesheet">
-
 	<!-- CSS
 		================================================== -->
 	<!-- Fontawesome Icon font -->
@@ -41,11 +40,10 @@
 	<link rel="stylesheet" href="css/main.css">
 	<!-- media-queries -->
 	<link rel="stylesheet" href="css/media-queries.css">
-	<!-- Local css file -->
-	<link rel="stylesheet" href="css/page/business.css">
 	<!-- Modernizer Script for old Browsers -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
-
+	<!-- Local css file -->
+	<link rel="stylesheet" href="css/page/signup.css">
 </head>
 
 <body id="body">
@@ -87,9 +85,10 @@
 			<nav class="collapse navbar-collapse navbar-right" role="navigation">
 				<ul id="nav" class="nav navbar-nav">
 					<li class="linkfix-home"><a href="./index.html#nightlife">Nightlife</a></li>
-					<li class="linkfix-login"><a href="./login.html">Account</a></li>
+					<li class="current"><a href="#body">Account</a></li>
 					<li class="linkfix-about"><a href="./about.html">About</a></li>
-					<li class="current"><a href="#body"><button class='businessButton'>Business</button></a></li>
+					<li class="linkfix-business"><a href="./business.html"><button
+								class='businessButton'>Business</button></a></li>
 				</ul>
 			</nav>
 			<!-- /main nav -->
@@ -101,100 +100,50 @@
         ==================================== -->
 
 	<!--
-        Business Landing
+        Account login section
+        ==================================== -->
+	<section id="accountLogin" class="accountLogin box">
+		<a id='goBack' href='./login.html'><img src='img/page/icon-back.png'></a>
+		<div class='accountLoginContainer'>
+
+			<h2>Sign up</h2>
+			<a href='#'><button class="loginFacebook">
+					<p id='accountTextBold'>Register with Facebook</p>
+				</button></a>
+			<div class='accountMiddle'>
+				<div class='line'></div>
+				<p id='accountTextBold' class='or'>or</p>
+				<div class='line'></div>
+				<form class='accountMiddleForm'>
+					<input class='accountItem' type="text" placeholder="Phone number">
+					<input class='accountItem' type="text" placeholder="Username">
+					<input class='accountItem' type="text" placeholder="Password">
+					<div class='accountMiddleFormContainer'>
+						<p id='accountTextSmallGrey'>By clicking on Sign up, you agree to nightli™️'s <a>Terms and
+								Conditions of Use</a>. </p>
+						<button class='checkBoxButton' type="submit">
+							<p id='accountTextBold'>Sign up</p>
+						</button>
+					</div>
+				</form>
+			</div>
+			<div class='accountBottom'>
+				<hr id='hr1' />
+				<p id='accountTextSmall'>Or still don´t have an account,</p>
+				<a href='./login.html'><button class="signupButton">
+						<p id='accountTextBold'>Log in</p>
+					</button></a>
+
+			</div>
+		</div>
+	</section>
+
+
+	<!--
+        End Account login section
         ==================================== -->
 
-	<section id="businessLanding" class='businessLanding box'>
-		<div class='businessText'>
-			<h1>Welcome nightclubs!</h1>
-			<p>Is the app easy-to-use and have the features my business need? See for yourself! We offer 30 days of free
-				testing and a friendly support that will help you get started. </p>
-		</div>
-		<a href='#contact'><button class='demo'>Request free demo</button></a>
-	</section>
 
-	<!--
-        End Business Landing
-		==================================== -->
-	<!--
-		Benefits For Business section
-		==================================== -->
-	<section id="benefitsForBusiness" class="benefitsForBusiness box">
-		<h2>Why choose nightli?</h2>
-		<div class='benefitsBusinessContainer'>
-			<div class='benefitsBusinessItem'>
-				<img src='./img/page/business/benefit4.png'>
-				<div class='benefitsBusinessText bene4'>
-					<h3>All the tools at a fraction of the cost</h3>
-					<p>Whether you need a smarter guestlist, more table bookings, increase online sales or help
-						promoters perform with professional invitations... your night club can count on nightli!</p>
-				</div>
-			</div>
-			<div class='benefitsBusinessItem'>
-				<div class='benefitsBusinessText bene5'>
-					<h3>Superior guest understanding</h3>
-					<p>Spend more time managing the nightclub and less time taking notes. We will analyze your visitors
-						with the latest technology and help you stay safe, popular and highly profitable.</p>
-				</div>
-				<img src='./img/page/business/benefit5.png'>
-			</div>
-			<div class='benefitsBusinessItem'>
-				<img src='./img/page/business/benefit6.png'>
-				<div class='benefitsBusinessText bene6'>
-					<h3>More returning customers</h3>
-					<p>Save advertising money with a top of the line loyalty program that makes your visitors want to
-						return and share the experience with our network of active party people.</p>
-				</div>
-			</div>
-			<div class='benefitsBusinessItem'>
-				<div class='benefitsBusinessText bene7'>
-					<h3>Customizable Branding</h3>
-					<p>We know that your nightclub is unique, and therefore put large focus on your logo, style and
-						privacy like your own app. More convenient to your guests and cost effective for your club.</p>
-				</div>
-				<img src='./img/page/business/benefit7.png'>
-			</div>
-		</div>
-	</section>
-	<!--
-		End Benefits For Business section
-		=================================== -->
-	<!--
-		Contact section
-		==================================== -->
-	<section id="contact" class="contact box">
-		<h2>Contact us</h2>
-		<p>Send us a message!</p>
-		<img src='./img/page/about/hedwig2.png'>
-		<form class='contactForm'>
-			<input class='contactItem contactName' type="text" placeholder="Name*">
-			<div class='ContactFormContainer'>
-				<input type="text" class='contactItem contactEmail' placeholder="Email*">
-				<input type="number" class='contactItem contactPhone' placeholder="Phone Number">
-			</div>
-			<input type="text" class='contactItem contactContent' placeholder="How can we help you?">
-			<button type="submit">Submit</button>
-
-		</form>
-	</section>
-	<!--
-		End Contact section
-		=================================== -->
-	<!--
-        Party Account
-		==================================== -->
-	<section id="businessAccount" class="businessAccount box">
-		<h2>Business account</h2>
-		<P>Use nightli™️ to manage your business directly</P>
-		<div class='buttonContainer'>
-			<a href='#'><button class="login accountButton">
-					<h3>Login with existing account</h3>
-				</button></a>
-		</div>
-	</section>
-	<!--
-        End  Party Account
-		==================================== -->
 	<!--
         footer
         ====================================-->
@@ -302,7 +251,64 @@
 	</script>
 	<!-- Custom Functions -->
 	<script src="js/custom.js"></script>
-	<script src="js/page/business.js"></script>
+	<script src="js/page/login.js"></script>
+
+	<script type="text/javascript">
+		$(function () {
+			/* ========================================================================= */
+			/*	Contact Form, this only works in HTML file, don't put in js file
+			/* ========================================================================= */
+
+			$('#login-form').validate({
+				rules: {
+					name: {
+						required: true,
+						minlength: 2
+					},
+					email: {
+						required: true,
+						email: true
+					},
+					message: {
+						required: true
+					}
+				},
+				messages: {
+					name: {
+						required: "come on, you have a name don't you?",
+						minlength: "your name must consist of at least 2 characters"
+					},
+					email: {
+						required: "no email, no message"
+					},
+					message: {
+						required: "um...yea, you have to write something to send this form.",
+						minlength: "thats all? really?"
+					}
+				},
+				submitHandler: function (form) {
+					$(form).ajaxSubmit({
+						type: "POST",
+						data: $(form).serialize(),
+						url: "process.php",
+						success: function () {
+							$('#login-form :input').attr('disabled', 'disabled');
+							$('#login-form').fadeTo("slow", 0.15, function () {
+								$(this).find(':input').attr('disabled', 'disabled');
+								$(this).find('label').css('cursor', 'default');
+								$('#success').fadeIn();
+							});
+						},
+						error: function () {
+							$('#login-form').fadeTo("slow", 0.15, function () {
+								$('#error').fadeIn();
+							});
+						}
+					});
+				}
+			});
+		});
+	</script>
 </body>
 
 </html>

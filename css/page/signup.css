@@ -208,6 +208,7 @@ body > section,
 ==========================================*/
 
 
+
 .businessButton{
   margin-left:5%;
   margin-top: -13%;
@@ -338,8 +339,19 @@ body > section,
   
   
 /*=========================================
- Account login
+ Account signup
 ==========================================*/
+#goBack{
+  margin-top: 5%;
+  margin-left: 15%;
+  display:block;
+  cursor: pointer;
+  text-align: left;
+}
+#goBack img{
+  width: 50px;
+ 
+}
 #accountTextBold{
     font-size: 18px;
     font-weight: 600;
@@ -376,7 +388,7 @@ body > section,
     margin:0 auto;
 }
 .accountLoginContainer h2{
-    margin-top: 15%;
+    margin-top: 5%;
     overflow:hidden;
 }
 .loginFacebook{
@@ -428,8 +440,8 @@ body > section,
    margin-left: 2%;
 }
 .checkBoxButton{
-    float: left;
-    margin-left:34%;
+    float: right;
+    margin-right: 0%;
     margin-top: 1%;
     width:120px;
     background-image:linear-gradient(to right,#FFB443, #FF731E);
@@ -441,7 +453,6 @@ body > section,
     transition: all 250ms ease-in-out;
   }
 .checkBox{
-    margin-top: 5% !important;
     float: left;
     width: 25px;
 }
@@ -480,11 +491,17 @@ body > section,
 
 @media screen and (max-width: 676px) {
     .accountLoginContainer h2{
-        margin-top: 25%;
+      
     }
+    #goBack{
+      margin-left: 0%;
+      margin-top: 10%;}
 }
   
 @media screen and (max-width: 450px) {
+  #goBack{
+
+    margin-top: 18%;}
     .accountLoginContainer{
         width: 320px;
     }
@@ -494,7 +511,6 @@ body > section,
     .checkBoxButton{
         margin-left:24%;
     }
-   
 }
 
 
@@ -502,7 +518,7 @@ body > section,
 	form
 ==========================================*/
 
-.login-form {}
+/* 
 
 .login-form h3 {
     font-size: 24px;
@@ -554,4 +570,4 @@ label.error {
     color: #c0392b;
     font-weight: normal;
     text-transform: capitalize;
-}
+} */

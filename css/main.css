@@ -201,7 +201,7 @@ body > section,
 .box{
  margin:0;
  width: 100%;
- height: 100vh;
+ min-height: 100vh;
  padding: 5% 8%;
 }
 
@@ -209,11 +209,13 @@ body > section,
 	Header
 ==========================================*/
 
+
+
 .businessButton{
-  margin-left:33%;
+  margin-left:5%;
   margin-top: -13%;
   width:190%;
-  background-image:linear-gradient(to right,#FFB443, #FF731E);
+  background-image:linear-gradient(to right,#C8B266, #B66D43);
   color: white;
   border: none;
   padding: 8px 0 9px 0px;
@@ -223,65 +225,121 @@ body > section,
   transition: all 250ms ease-in-out;
   
 }
-.container{
-  padding-left: 5px;
-  padding-right: 5px;
+.businessButton:hover{
+  background-image:linear-gradient(to right,#FFB443, #FF731E);
 }
-#navigation {
-  background-color: rgb(10, 10, 10);
-  border: 0 none;
-  margin: 0;
+  .navbar-right{
+    width: 57%;
+  }
+  .linkfix-business li a{
+    padding-left: 0px !important;
+  }
   
-    -webkit-transition: background-color 800ms linear;
-       -moz-transition: background-color 800ms linear;
-	    -ms-transition: background-color 800ms linear;
-         -o-transition: background-color 800ms linear;
-			transition: background-color 800ms linear;
-}
-.navbar{
-  min-height: 70px;
-}
-.navbar-toggle i {
-	color: #fff;
-}
-
-.navbar-brand {
-  padding: 0;
-  padding-top: 10px;
-  cursor: pointer; 
-}
-
-.collapse.in.navbar-collapse {
-    border-style: solid;
-    border-color: #fff;
-    background: #3e3e3e;
-    border-width: thin;
-}
-
-.collapsing.navbar-collapse {
-    border-style: solid;
-    border-color: #fff;
-    background: #3e3e3e;
-    border-width: thin;
-}
-.navbar-nav li a {
-    font-size: 1.5rem;
-	  border-top: 1px solid transparent;
-    color: #fff;
-    font-weight: 600;
-    padding-top: 25px;
-    padding-left: 35px;
-    padding-right: 35px;
+  
+  
+  #navigation {
+    background-color: rgb(10, 10, 10);
+    border: 0 none;
+    margin: 0;
+    
+      -webkit-transition: background-color 800ms linear;
+         -moz-transition: background-color 800ms linear;
+          -ms-transition: background-color 800ms linear;
+           -o-transition: background-color 800ms linear;
+              transition: background-color 800ms linear;
+  }
+  .navbar{
+    min-height: 70px;
+  }
+  .navbar-toggle i {
+      color: #fff;
+  }
+  
+  .navbar-brand {
+    padding: 0;
+    padding-top: 10px;
     cursor: pointer; 
+  }
+  
+  .collapse.in.navbar-collapse {
+      border-style: solid;
+      border-color: #fff;
+      background: #3e3e3e;
+      border-width: thin;
+  }
+  
+  .collapsing.navbar-collapse {
+      border-style: solid;
+      border-color: #fff;
+      background: #3e3e3e;
+      border-width: thin;
+  }
+  .navbar-nav li a {
+      font-size: 1.5rem;
+        border-top: 1px solid transparent;
+      color: #fff;
+      font-weight: 600;
+      padding-top: 25px;
+      padding-left: 35px;
+      padding-right: 35px;
+      cursor: pointer; 
+  }
+  
+  .navbar-nav li a.current,
+  .navbar-nav li a:focus,
+  .navbar-nav li a:hover {
+      background-color: transparent;
+      border-top: 2px solid #fff;
+      color: #fff;
+  }
+  
+  @media screen and (max-width: 1150px) {
+    .navbar-nav{
+       margin-left: -15%;
+    }
+    .navbar-nav li a {
+      padding-top: 25px;
+      padding-left: 20px;
+      padding-right: 35px;
+    }
+    .businessButton{
+      width:170%;
+      padding: 8px 0 9px 0px;
+      font-size: 16px;
+    }
+  
+  
+  }
+  @media screen and (max-width: 1000px) {
+    .businessButton{
+      margin-left:0%;
+    }
+      .container {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+      }
+  }
+  @media screen and (max-width: 767px) {
+    .businessButton{
+      width:90%;
+      margin-left:-33%;
+    }
+    .navbar-right{
+      width: 100% !important;
+    }
+  
+    .navbar-nav li a {
+      padding-left: 52%;
+    }
 }
+@media screen and (max-width: 575px) {
+  .navbar-brand{
+    margin-left:5%;
+  }
+  
+}
+  
 
-.navbar-nav li a.current,
-.navbar-nav li a:focus,
-.navbar-nav li a:hover {
-	background-color: transparent;
-	border-top: 2px solid #fff;
-	color: #fff;
-}
 
 
 
@@ -289,16 +347,18 @@ body > section,
 /*=========================================
 	Slider
 ==========================================*/
+
 #landingVideo{
   position: fixed;
   right: 0;
   bottom: 0;
   min-width: 100%; 
   min-height: 100vh;
+  background-position: 50% 50%;
   filter: brightness(30%);
   z-index: -1;
 }
-h1 img{
+.itemsOnLanding h1 img{
   margin-top: 20px;
   margin-left:10px;
   width: 10px;
@@ -347,6 +407,7 @@ h1 img{
   .downloadButtons{
     margin-left: 45%;
     margin-right: 15%;
+    margin-top: 30%;
   }
 }
 @media screen and (max-width: 575px) {
@@ -363,6 +424,9 @@ h1 img{
   }
   .itemsOnLanding h1{
     font-size: 4rem;
+  }
+  #slider{
+    height: 600px !important;
   }
 } 
 
@@ -595,7 +659,7 @@ top: -8px;
 	About
 ==========================================*/
 
-#about-1 {
+/* #about-1 {
   background-color: #f4f7f9;
 }
 
@@ -685,7 +749,7 @@ top: -8px;
 }
 @media screen and (max-width: 575px) {
   
-} 
+}  */
 /*=========================================
 	Nightlife
 ==========================================*/
@@ -981,6 +1045,7 @@ top: -8px;
 }
 .benefitsItems p{
   color: white;
+  font-style: italic;
   margin-top: 3%;
   font-weight: 400;
 }
@@ -1011,7 +1076,6 @@ top: -8px;
 }
 .benefitsItems p{
   font-size: 1.2rem;
-  
 }
 .beneText{
   width:62%;
@@ -1052,7 +1116,7 @@ Party Account
   cursor: pointer;
 }
 .accountButton{
-    width: 500px;
+    width: 100%;
     height: 90px;
     border: none;
     padding: 10px 10px 8px;
@@ -1083,7 +1147,7 @@ Party Account
 }
 @media screen and (max-width: 767px) {
   .accountButton{
-  width: 400px;
+  width: 100%;
   height: 70px;
   }
   .partyAccount{
@@ -1095,9 +1159,9 @@ Party Account
     width: 280px;
     height: 55px;
     }
-    .box{
+    /* .box{
       height:500px;
-    }
+    } */
     .buttonContainer p{
       margin-left: 10%;
     }

@@ -2,223 +2,334 @@
 <!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
-    <head>
-    	<!-- meta charec set -->
-        <meta charset="utf-8">
-		<!-- Always force latest IE rendering engine or request Chrome Frame -->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<!-- Page Title -->
-        <title>nightli</title>
-		<!-- Meta Description -->
-        <meta name="description" content="nightli">
-        <meta name="keywords" content="nightli, party, event, marketing, club, administration, guestlist">
-        <meta name="author" content="Tribed Community AB">
-		<!-- Mobile Specific Meta -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-		
-		<!-- Google Font -->
-		
-		<link href='fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
 
-		<!-- CSS
+<head>
+	<!-- meta charec set -->
+	<meta charset="utf-8">
+	<!-- Always force latest IE rendering engine or request Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<!-- Page Title -->
+	<title>nightli</title>
+	<!-- Meta Description -->
+	<meta name="description" content="nightli">
+	<meta name="keywords" content="nightli, party, event, marketing, club, administration, guestlist">
+	<meta name="author" content="Tribed Community AB">
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Google Font -->
+
+	<link
+		href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,900&display=swap"
+		rel="stylesheet">
+	<!-- CSS
 		================================================== -->
-		<!-- Fontawesome Icon font -->
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-		<!-- Twitter Bootstrap css -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/bootstrap-grid.min.css">
-		<!-- jquery.fancybox  -->
-        <link rel="stylesheet" href="css/jquery.fancybox.css">
-		<!-- animate -->
-        <link rel="stylesheet" href="css/animate.css">
-		<!-- Main Stylesheet -->
-        <link rel="stylesheet" href="css/main.css">
-		<!-- media-queries -->
-        <link rel="stylesheet" href="css/media-queries.css">
-		<!-- Modernizer Script for old Browsers -->
-        <script src="js/modernizr-2.6.2.min.js"></script>
-		<!-- Local css file -->
-		<link rel="stylesheet" href="css/page/about.css">
-    </head>
-	
-    <body id="body">
-	
-		<!-- preloader -->
-		<div id="preloader" class="container-fluid">
-			<div class="row" style="height: 100%;">
-				<div class="col-12 text-center">
-					<img src="img/preloader.gif" alt="Preloader">
-				</div>
+	<!-- Fontawesome Icon font -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- Twitter Bootstrap css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	<!-- jquery.fancybox  -->
+	<link rel="stylesheet" href="css/jquery.fancybox.css">
+	<!-- animate -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Main Stylesheet -->
+	<link rel="stylesheet" href="css/main.css">
+	<!-- media-queries -->
+	<link rel="stylesheet" href="css/media-queries.css">
+	<!-- Modernizer Script for old Browsers -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- Local css file -->
+	<link rel="stylesheet" href="css/page/about.css">
+</head>
+
+<body id="body">
+
+	<!-- preloader -->
+	<div id="preloader" class="container-fluid">
+		<div class="row" style="height: 100%;">
+			<div class="col-12 text-center">
+				<img src="img/preloader.gif" alt="Preloader">
 			</div>
-
 		</div>
-		<!-- end preloader -->
 
-        <!-- 
+	</div>
+	<!-- end preloader -->
+
+	<!-- 
         Fixed Navigation
         ==================================== -->
-        <header id="navigation" class="navbar-fixed-top navbar">
-            <div class="container">
-                <div class="navbar-header">
-                    <!-- responsive nav button -->
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <i class="fa fa-bars fa-2x"></i>
-                    </button>
-					<!-- /responsive nav button -->
+	<header id="navigation" class="navbar-fixed-top navbar">
+		<div class="container">
+			<div class="navbar-header">
+				<!-- responsive nav button -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<i class="fa fa-bars fa-2x"></i>
+				</button>
+				<!-- /responsive nav button -->
 
-					<!-- logo -->
-                    <a class="navbar-brand linkfix-home" href="./index.html">
-						<h1 id="logo">
-							<img class="img-logo" src="img/logo.png" alt="tribed">
-						</h1>
-					</a>
-					<!-- /logo -->
-                </div>
+				<!-- logo -->
+				<a class="navbar-brand" href="./index.html">
+					<h1 id="logo">
+						<img class="img-logo" src="img/logo.png" alt="tribed">
+					</h1>
+				</a>
+				<!-- /logo -->
+			</div>
 
-				<!-- main nav -->
-                <nav class="collapse navbar-collapse navbar-right" role="navigation">
-                    <ul id="nav" class="nav navbar-nav">
-						<li class="linkfix-contact"><a href="./index.html#contact">Contact</a></li>
-						<li class="linkfix-login"><a href="./login.html">Login</a></li>
-						<li class="current"><a href="#body">About</a></li>
-						<li class="linkfix-business"><a href="./business.html">Business</a></li>
-                    </ul>
-                </nav>
-				<!-- /main nav -->
+			<!-- main nav -->
+			<nav class="collapse navbar-collapse navbar-right" role="navigation">
+				<ul id="nav" class="nav navbar-nav">
+					<li class="linkfix-home"><a href="./index.html#nightlife">Nightlife</a></li>
+					<li class="linkfix-login"><a href="./login.html">Account</a></li>
+					<li class="current"><a href="#body">About</a></li>
+					<li class="linkfix-business"><a href="./business.html"><button
+								class='businessButton'>Business</button></a></li>
+				</ul>
+			</nav>
+			<!-- /main nav -->
 
-            </div>
-        </header>
-        <!--
+		</div>
+	</header>
+	<!--
         End Fixed Navigation
         ==================================== -->
 
-        <!--
-        ... section
+
+	<!--
+        About Us section
         ==================================== -->
 
-		<section id="name__this__section">
-			<div class="container">
-				<div class="space-200"></div>
-				<div class="row">
+	<section id="aboutUs" class="aboutUs boxSpecial">
+		<h2>About us</h2>
+		<div class='aboutLeft'>
+			<p>nightli™️ is a mobile app and web application built by Tribed Community AB in Stockholm, Sweden.</p>
+			<br />
+			<p>Time has finally come to digitize all stages of “going out” through gamification. With the help of big
+				data and a playful user experience nightli will be the first app to bring nightlife as we know it today,
+				to a community platform that raises guest loyalty for nightclub owners. Beneficiaries of our solution
+				will not only be the clubs, but also the visitors thanks to our point-based system. Therefore, with the
+				help of smart algorithms our goal is to grow world's nightlife in a fair, safeand humorous way through
+				technology. We believe nightlife is not a closedguestlist. But a community, where everyone is presented
+				with an equal opportunity!</p>
+			<a href='https://tribed.eu/'><button class='viewButton'>Visit Tribed</button></a>
+		</div>
+		<div class='aboutRight'>
+			<img src='./img/page/about/about.png'>
+		</div>
+	</section>
 
-					<div class="sec-title text-center mb50 wow fadeInDown animated" data-wow-duration="500ms">
-						<h2>Awesome title</h2>
-						<div class="devider"><i class="fa fa-comments fa-lg"></i></div>
-					</div>
-
-					<div class="sec-sub-title text-center wow rubberBand animated" data-wow-duration="1000ms">
-						<p class="col-xs-offset-2 col-8">
-							Textily text!
-						</p>
-					</div>
-
-					<br>
-
-				</div>
-			</div>
-		</section>
-
-        <!--
-        End ... section
+	<!--
+        End About Us section
         ==================================== -->
 
-		<section class="space-200"></section>
-		<section class="space-200"></section>
 
-		
-		<footer id="footer" class="footer">
-			<div class="container">
-				<div class="row">
-				
-					<div class="col-md-3 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms">
-					</div>
-				
-					<div class="col-md-2 col-sm-6 col-xs-6 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
-						<div class="footer-single footer-logo">
-							<img src="img/footer-logo.png" alt="">
-							<br>
-						</div>
-					</div>
+	<!--
+        News section
+        ==================================== -->
 
-					<div class="col-md-6 col-sm-6 col-xs-6">
-						<div class="text-center footer-single">
-							<!-- footer social links -->
-							<div class=" wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
-								<h6>Connect with us</h6>
+	<section id="news" class="news boxSpecial">
+		<h2>News</h2>
+		<div class='newsLeft'>
+			<img src='./img/page/about/kth.jpg'>
+		</div>
+		<div class='newsRight'>
+			<p>Project is supported by KTH Innovation.</p>
+			<br />
+			<p>Among many strong applicants nightliTM was one of the few projects selected to participate in the KTH
+				innovation pre-incubator program starting Fall 2019. The group of start-ups selected (Batch 10) are
+				presented with office space, juridical support, experienced business advisors and more. For Tribeds
+				business, this support provides well recieved validation of project nightliTM and our mission of
+				building a digital nightlife of the future. In addition, working alongside other successful start-ups
+				inspires us to continue innovating and build a forward-thinking company culture. </p>
+			<a href='https://www.kth.se/innovation/forinkubator/bolag/batch-10/nightli-1.932841'><button
+					class='viewButton'>View Batch 10</button></a>
+		</div>
+	</section>
 
-								<div class="text-center footer-social">
-									<a href="https://www.linkedin.com/company/15871568"  style="margin-left: 5px; margin-right: 5px;"><i class="fa fa-linkedin fa-2x"></i></a>
-									<a href="https://www.instagram.com/nightli_points"  style="margin-left: 5px; margin-right: 5px;"><i class="fa fa-instagram fa-2x"></i></a>
-									<a href="https://www.facebook.com/Nightli.TM"  style="margin-left: 5px; margin-right: 5px;"><i class="fa fa-facebook fa-2x"></i></a>
-								</div>
-							</div>
-							<!-- end footer social links -->
+	<!--
+		End News section
+		==================================== -->
 
-							<p class="copyright">
-								Copyright © 2019 <a href="http://tribed.eu/">Tribed Community AB</a>. All rights reserved.
-							</p>
-						</div>
-					</div>
-				
-					<div class="col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
+	<!--
+		Team section
+        ==================================== -->
 
-
-					</div>
-
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-					</div>
-				</div>
+	<section id="team" class="team box">
+		<h2>Our team</h2>
+		<div class='teamItem'>
+			<img src='./img/page/about/henrik.png'>
+			<div class='teamText'>
+				<h3>Henrik Hellbe</h3>
+				<h3>CEO</h3>
+				<p>Please contact me for sales, marketing or other general inquires.</p>
 			</div>
-		</footer>
-		
-		<a href="javascript:void(0);" id="back-top" style="color: #ffffff"><i class="fa fa-angle-up fa-3x"></i></a>
+		</div>
+		<div class='teamItem'>
+			<img src='./img/page/about/eric.png'>
+			<div class='teamText'>
+				<h3>Eric Lewerentz</h3>
+				<h3>CTO</h3>
+				<p>Happy to answer technical or service-related questions.</p>
+			</div>
+		</div>
+		<div class='teamItem'>
+			<img src='./img/page/about/hedwig.png'>
+			<div class='teamText'>
+				<h3>Hedwig</h3>
+				<h3>Guide</h3>
+				<p>Here to help and to offer a great nightlife experience.</p>
+			</div>
+		</div>
+		<div class='teamItem'>
+			<img src='./img/page/about/tingmo.jpg'>
+			<div class='teamText'>
+				<h3>Tingmo Liu</h3>
+				<h3>front-end developer</h3>
+				<h3>UX designer</h3>
+			</div>
+		</div>
+	</section>
 
-		<!-- Essential jQuery Plugins
+	<!--
+		End Team section
+		=================================== -->
+
+	<!--
+		Contact section
+		==================================== -->
+	<section id="contact" class="contact box">
+		<h2>Contact us</h2>
+		<p>Send us a message!</p>
+		<img src='./img/page/about/hedwig2.png'>
+		<form class='contactForm'>
+			<input class='contactItem contactName' type="text" placeholder="Name*">
+			<div class='ContactFormContainer'>
+				<input type="text" class='contactItem contactEmail' placeholder="Email*">
+				<input type="number" class='contactItem contactPhone' placeholder="Phone Number">
+			</div>
+			<input type="text" class='contactItem contactContent' placeholder="How can we help you?">
+			<button type="submit">Submit</button>
+
+		</form>
+	</section>
+	<!--
+		End Contact section
+		=================================== -->
+
+	<!--
+        footer
+        ====================================-->
+	<footer id="footer" class="footer">
+
+		<div class="row">
+
+			<!-- <div class="col-md-3 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms">
+				</div> -->
+
+			<div class="col-md-2 col-sm-6 col-xs-6 wow fadeInUp animated" data-wow-duration="500ms"
+				data-wow-delay="300ms">
+				<a href='https://tribed.eu/'>
+					<div class="footer-single footer-logo">
+						<img src="img/footer-logo.png">
+						<br>
+					</div>
+				</a>
+			</div>
+
+
+
+			<!-- footer social links -->
+			<!-- <div class=" wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms"> -->
+
+			<div class="footerTextContainer">
+				<a href="#">
+					<p>Contact us</p>
+				</a>
+				<a href="#">
+					<p>Terms & conditions</p>
+				</a>
+				<a href="#">
+					<p>GDPR & Cookie Policy</p>
+				</a>
+				<!-- </div> -->
+				<!-- end footer social links -->
+
+				<p class="copyright right1">Copyright © 2019 <a href="http://tribed.eu/">Tribed Community AB</a>.</p>
+				<p class="copyright right2">All rights reserved.</p>
+			</div>
+
+
+			<!-- <div class="col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
+
+
+				</div> -->
+
+
+			<!-- <div class="row">
+				<div class="col-md-12">
+				</div>
+			</div> -->
+			<div class="socialMediaContainer">
+				<a href="https://www.linkedin.com/company/15871568" style=" margin-right: 5px;"><i
+						class="fa fa-linkedin fa-2x"></i></a><br>
+				<a href="https://www.instagram.com/nightli_points" style=" margin-right: 5px;"><i
+						class="fa fa-instagram fa-2x"></i></a><br>
+				<a href="https://www.facebook.com/Nightli.TM" style=" margin-right: 5px;"><i
+						class="fa fa-facebook fa-2x b"></i></a>
+			</div>
+
+	</footer>
+
+	<a href="javascript:void(0);" id="back-top" style="color: #ffffff"><i class="fa fa-angle-up fa-3x"></i></a>
+
+	<!-- Essential jQuery Plugins
 		================================================== -->
-		<!-- Main jQuery -->
-        <script src="js/jquery-1.11.1.min.js"></script>
-		<!-- Single Page Nav -->
-        <script src="js/jquery.singlePageNav.min.js"></script>
-		<!-- Twitter Bootstrap -->
-        <script src="js/bootstrap.min.js"></script>
-		<script src="js/bootstrap.bundle.min.js"></script>
-		<!-- jquery.fancybox.pack -->
-        <script src="js/jquery.fancybox.pack.js"></script>
-		<!-- jquery.mixitup.min -->
-        <script src="js/jquery.mixitup.min.js"></script>
-		<!-- jquery.parallax -->
-        <script src="js/jquery.parallax-1.1.3.js"></script>
-		<!-- jquery.countTo -->
-        <script src="js/jquery-countTo.js"></script>
-		<!-- jquery.appear -->
-        <script src="js/jquery.appear.js"></script>
-		<!-- Contact form validation -->
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
-		<!-- Google Map -->
-        <script type="text/javascript" src="maps.googleapis.com/maps/api/js?sensor=false"></script>
-		<!-- jquery easing -->
-        <script src="js/jquery.easing.min.js"></script>
-		<!-- jquery easing -->
-        <script src="js/wow.min.js"></script>
-		<script>
-			var wow = new WOW ({
-				boxClass:     'wow',      // animated element css class (default is wow)
-				animateClass: 'animated', // animation css class (default is animated)
-				offset:       120,          // distance to the element when triggering the animation (default is 0)
-				mobile:       false,       // trigger animations on mobile devices (default is true)
-				live:         true        // act on asynchronously loaded content (default is true)
-			  }
-			);
-			wow.init();
-		</script> 
-		<!-- Custom Functions -->
-        <script src="js/custom.js"></script>
-        <script src="js/page/about.js"></script>
+	<!-- Main jQuery -->
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<!-- Single Page Nav -->
+	<script src="js/jquery.singlePageNav.min.js"></script>
+	<!-- Twitter Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<!-- jquery.fancybox.pack -->
+	<script src="js/jquery.fancybox.pack.js"></script>
+	<!-- jquery.mixitup.min -->
+	<script src="js/jquery.mixitup.min.js"></script>
+	<!-- jquery.parallax -->
+	<script src="js/jquery.parallax-1.1.3.js"></script>
+	<!-- jquery.countTo -->
+	<script src="js/jquery-countTo.js"></script>
+	<!-- jquery.appear -->
+	<script src="js/jquery.appear.js"></script>
+	<!-- Contact form validation -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
+	<!-- Google Map -->
+	<script type="text/javascript" src="maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<!-- jquery easing -->
+	<script src="js/jquery.easing.min.js"></script>
+	<!-- jquery easing -->
+	<script src="js/wow.min.js"></script>
+	<script>
+		var wow = new WOW({
+			boxClass: 'wow',      // animated element css class (default is wow)
+			animateClass: 'animated', // animation css class (default is animated)
+			offset: 120,          // distance to the element when triggering the animation (default is 0)
+			mobile: false,       // trigger animations on mobile devices (default is true)
+			live: true        // act on asynchronously loaded content (default is true)
+		}
+		);
+		wow.init();
+	</script>
+	<!-- Custom Functions -->
+	<script src="js/custom.js"></script>
+	<script src="js/page/about.js"></script>
 
-    </body>
+</body>
+
 </html>
