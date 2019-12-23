@@ -53,7 +53,7 @@ $(document).ready(function(){
     $('.linkfix-about a').on('click',function() {
         window.location.href = "./about.html";
     });
-    $('.linkfix-business a').on('click',function() {
+    $('.linkfix-business div').on('click',function() {
         window.location.href = "./business.html";
     });
 
