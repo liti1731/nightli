@@ -16,6 +16,10 @@ body {
     max-width: 1280px;
 }
 
+.container-fluid-no-limit {
+    max-width: 1980px;
+}
+
 ol, ul {
     margin: 0;
     padding: 0;
@@ -753,6 +757,11 @@ top: -8px;
 /*=========================================
 	Nightlife
 ==========================================*/
+#nightlife {
+    min-height: 100vh;
+    background-color: #1F1F1F;
+    border: none;
+}
 .nightlife{
   background-color: #1F1F1F;
   border:none;
@@ -763,6 +772,7 @@ top: -8px;
 
 /* The container <div>*/
 .nightlifeDropdown {
+  width: 100%;
   position: relative;
   display: inline-block;
   border-radius: 50px;
@@ -774,7 +784,7 @@ top: -8px;
 }
 /* The Dropdown Button */
 .dropbtn {
-  width:220px;
+  width: 100%;
   background-color: white;
   color: black;
   border: none;
@@ -791,11 +801,11 @@ top: -8px;
   display: none;
   position: absolute;
   background-color: white;
-  min-width: 220px;
+  width: 100%;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   border-radius: 10px;
-  margin-top: -40px;
+  margin-top: -41px;
 }
 
 /* Links inside the dropdown */
@@ -822,12 +832,10 @@ top: -8px;
 
 
 .nightlifeSearch {
-  width: 220px;
   padding: 8px 24px;
   background-color: transparent;
   transition: transform 250ms ease-in-out;
   font-size: 16px;
-  line-height: 18px;
   color:white;
   background-image: url("../img/page/icon-search.png");
   background-repeat: no-repeat;
@@ -839,18 +847,24 @@ top: -8px;
   backface-visibility: hidden;
   transform-style: preserve-3d;
   }
-
+.nightlifeSpacing{
+  margin-left: 2%;
+  margin-right: 2%;
+}
   .nightlifeEvents{
     overflow: hidden;
     margin-top: 6%;
+    margin-left: 2%;
+    margin-right: 2%;
   }
   .nightlifeItem{
-    float: left;
+    /*float: left;
     width: 28%;
-    margin-right: 5%;
+    margin-right: 5%;*/
     border-radius: 30px;
     filter:opacity(50%);
     cursor: pointer;
+    margin-bottom: 7%;
   }
   .nightlifeItem:hover{
     filter:opacity(100%);
@@ -858,14 +872,16 @@ top: -8px;
 
   .nightlifeItem h3{
     text-align: center;
-    margin-top: 36%;
   font-size: 2.6rem;
   font-weight: bold;
   }
   .nightlifeItem p{
     text-align: center;
     color: white;
-    margin-bottom: 6%;
+  }
+  .infoTicketSection{
+    padding-top: 25%;
+    padding-bottom: 5%;
   }
   .item1{
     background-image: url("../img/page/main-page/event1.png");
@@ -883,17 +899,16 @@ top: -8px;
         background-size: cover;
   }
   .buyTicketSection{
+    padding-top: 15%;
+    padding-bottom: 15%;
     opacity: 0;
     width: 100%;
-    padding-top: 15%;
-    padding-bottom:15%;
     background-color: #4F4F4F;
     border-radius: 0 0 30px 30px;
   }
   .buyTicket {
-    margin-left:28%;
     margin-top: 1%;
-    width:150px;
+    width: 100%;
     background-image:linear-gradient(to right,#FFB443, #FF731E);
     color: white;
     border: none;
@@ -908,9 +923,8 @@ top: -8px;
     opacity: 1;
   }
 .viewMore {
-  margin-left:33%;
-  margin-top: 8%;
-  width:40%;
+  margin-top: 12%;
+  width:100%;
   background-image:linear-gradient(to right,#FFB443, #FF731E);
   color: white;
   border: none;
@@ -922,15 +936,11 @@ top: -8px;
 }
 @media screen and (max-width: 1200px) {
   .nightlifeItem{
-    margin-right: 3%;
-    width: 30%;
   }
   .buyTicket {
-    margin-left:20%;
-   
+
   }
   .viewMore {
-    margin-left:28%;
   }
   
 }
@@ -945,14 +955,9 @@ top: -8px;
   }
  
   .buyTicket {
-    margin-left:22%;
-    width:100px;
     padding: 5px 5px  5px 5px;
   }
   .viewMore {
-    margin-left:27%;
-    margin-top: 8%;
-    width:40%;
   }
   .nightlife{
     height: 500px !important;
@@ -963,15 +968,11 @@ top: -8px;
     margin-top: 30px;
   }
   .viewMore {
-    margin-left:10%;
-    margin-top: 3%;
-    width:80%;
   }
   .nightlifeItem h3{
     text-align: center;
-    margin-top: 36%;
-  font-size: 2.6rem;
-  font-weight: bold;
+    font-size: 2.6rem;
+    font-weight: bold;
   }
   .nightlifeItem p{
     font-size: 1.8rem;
@@ -982,13 +983,10 @@ top: -8px;
   .nightlifeItem{
     clear: left;
     margin:0 auto;
-    width: 100%;
     margin-bottom: 10%;
   }
   
   .buyTicket {
-    margin-left:18%;
-    margin-top: 1%;
     width:250px;
     padding: 15px 16px 15px 16px;
   }
@@ -1006,7 +1004,6 @@ top: -8px;
     height: 1600px !important;
   }
   .buyTicket {
-    margin-left:14%;
   }
 }
 @media screen and (max-width: 380px) {
@@ -1014,8 +1011,6 @@ top: -8px;
     height: 1400px !important;
   }
   .buyTicket {
-    margin-left:18%;
-    width:200px;
   }
 }
 /*=========================================
