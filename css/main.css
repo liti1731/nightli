@@ -10,16 +10,25 @@ body {
 	  font-size: 13px;
     color: #6a737b;
     overflow-x: hidden;
+    width: 100% !important;
 }
 
 .container-fluid {
     max-width: 1280px;
+    /* margin-top: 15vh; */
 }
 
 .container-fluid-no-limit {
     max-width: 1980px;
 }
-
+.box{
+  margin:0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 10vh 8%;
+  margin-top: -10px;
+ }
+ 
 ol, ul {
     margin: 0;
     padding: 0;
@@ -202,18 +211,14 @@ body > section,
   }
 }
 
-.box{
- margin:0;
- width: 100%;
- min-height: 100vh;
- padding: 5% 8%;
-}
 
 
 /*=========================================
 	Header
 ==========================================*/
-
+.linkfix-business{
+  margin-left: 40px;
+}
 .businessButtonBackground{
     background-image:linear-gradient(to right,#C8B266, #B66D43);
     color: white;
@@ -241,13 +246,10 @@ body > section,
     -o-transition: background-color 800ms linear;
     transition: background-color 800ms linear;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
-    .navigation-container {
-        max-width: 768px;
-    }
-}
+
 .navbar{
     min-height: 70px;
+    width: 100%;
 }
 .navbar-toggle i {
     color: #fff;
@@ -258,7 +260,9 @@ body > section,
     padding-top: 10px;
     cursor: pointer;
 }
-
+.navbar-header{
+  width: 20%;
+}
 .collapse.in.navbar-collapse {
     border-style: solid;
     border-color: #fff;
@@ -303,53 +307,66 @@ body > section,
     .businessButtonBackground{
         margin-top: 25px;
         margin-bottom: 15px;
-        margin-left: auto;
         margin-right: auto;
         padding: 4px 15px 4px 15px;
         width:33%;
+        min-width: 100px;
+    }
+    .navbar-header{
+      width: 100%;
+      margin-left:0px !important;
+    }
+    .linkfix-business{
+      margin-left: 40%;
     }
 }
 
 /*=========================================
-	Slider
+Landing
 ==========================================*/
-
+#landing{
+  padding: 0;
+  /* position: absolute;
+  top: 0;
+  bottom: 0; */
+  width: 100%;
+  height: 100%; 
+  overflow: hidden;
+}
 #landingVideo{
-  position: fixed;
-  right: 0;
-  bottom: 0;
   min-width: 100%; 
-  min-height: 100vh;
+  min-height: 100%;
+  width: auto;
+  height: auto;
   background-position: 50% 50%;
   filter: brightness(30%);
   z-index: -1;
 }
 .itemsOnLanding h1 img{
-  margin-top: 20px;
-  margin-left:10px;
-  width: 10px;
+  margin-top: 3%;
+  margin-left:0.5%;
+  width: 1vw;
 }
 .itemsOnLanding{
   z-index:1;
   position: absolute;
-  top: 20%;
-  left: 8%;
+  top: 0;
+  left: 0;
   width: 100%;
   color: white;
+  margin-top: 10%;
 }
 .itemsOnLanding h1{
-  font-size: 6rem;
+  font-size: 5vw;
   font-weight: bold;
-  width: 40%;
 }
 .itemsOnLanding p{
   padding-top: 10px;
-  font-size: 1.5rem;
+  font-size: 2vw;
 }
 .downloadButtons{
- margin-left: 60%;
+ margin-left: 75%;
  margin-top: 15%;
- margin-right: 10%;
 }
 .downloadButtons a{
   display: block;
@@ -357,55 +374,53 @@ body > section,
  cursor: pointer; 
 }
 .downloadButtons a img{
-  width: 70%;
+  width: 100%;
   display: block;
   
 }
 
 
+@media screen and (max-width: 1200px) {
+  .itemsOnLanding h1{
+    font-size: 6vw;
+  }
+  .downloadButtons{
+    margin-left: 75%; 
+    margin-top: 10%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .itemsOnLanding h1{
+    font-size: 6vw;
+  }
+ 
+}
 @media screen and (max-width: 767px) {
-  .itemsOnLanding h1{
-    font-size: 5rem;
-  }
   .itemsOnLanding{
-    width: 110%;
+    top: 12%;
+  }
+  .itemsOnLanding h1{
+    font-size: 50px;
+  }
+  .itemsOnLanding p{
+    font-size: 3vw;
   }
   .downloadButtons{
-    margin-left: 45%;
-    margin-right: 15%;
-    margin-top: 30%;
+    margin-left: 55%; 
+    margin-top: 12%;
   }
-}
-@media screen and (max-width: 575px) {
-  .downloadButtons a img{
-    width: 100%;
   
-  }
-  .downloadButtons{
-    margin-left: 40%;
-    margin-right: 35%;
-  }
+}
+@media screen and (max-width: 520px) {
   .itemsOnLanding{
-    width: 130%;
+    top: 12%;
   }
-  .itemsOnLanding h1{
-    font-size: 4rem;
-  }
-  #slider{
-    height: 600px !important;
-  }
-} 
-
-
-#slider {
-	padding: 0;
-   
 }
 
-#slider .carousel-inner .item {
+/* #slider .carousel-inner .item {
     background-size: cover;
     background-position-x: center;
-}
+} */
 .space-150 {
     padding-bottom: 150px;
     background-color: #2c2f31;
@@ -421,12 +436,11 @@ body > section,
 
 .carousel-caption {
   top: 50%;
-}*/
+}
 
 .main-title {
     position: absolute;
     top: 40%;
-    /*left: 10%;*/
     z-index: 10;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -470,10 +484,10 @@ body > section,
 
 .main-title p:after {
     left: 20px;
-}
+} 
 
-
-.carousel-caption {
+*/
+/* .carousel-caption {
     margin-left: 10%;
     margin-right: 10%;
     background: #000000c2;
@@ -618,109 +632,14 @@ top: -8px;
   height: 8px;
   width: 8px;
 }
+ */
 
 
 
-/*=========================================
-	About
-==========================================*/
-
-/* #about-1 {
-  background-color: #f4f7f9;
-}
-
-#about-3 {
-    background-color: #f4f7f9;
-}
-
-#about-4 {
-    background-color: #2c2f31;
-}
-
-
-.about .about-img {
-    height: 646px;
-    background-position-x: center;
-    background-repeat: no-repeat;
-    margin-bottom: 70px;
-}
-
-.about p {
-    font-size: 17px;
-    line-height: 31px;
-    font-weight: 400;
-}
-
-.about.about-dark-gray p {
-    color: #bbbbbb;
-}
-
-.about.about-dark-gray h2 {
-    color: #fff;
-}
-
-.owl-controls {
-  bottom: -45px;
-  margin-top: 10px;
-  position: relative;
-  text-align: center;
-}
-
-.owl-controls .owl-page {
-  display: inline-block;
-}
-
-.owl-controls .owl-page span {
-  border: 1px solid #C7CED3;
-  border-radius: 20px;
-  display: block;
-  height: 8px;
-  margin: 5px 4px;
-  width: 8px;
-}
-
-.owl-controls .owl-page.active span {
-  background: #062033;
-  border: 0;
-}
-
-.service-custom-icon {
-    color: #bf0d3e;
-    padding: 10px 13px;
-}
-
-.service-custom-icon p {
-    font-size: 45px;
-    margin-bottom: 45px;
-}
-
-.service-desc {
-    position: relative;
-    top: 5px;
-}
-
-.service-desc h3 {
-  color: #062033;
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 25px;
-}
-
-.service-desc p {
-    font-size: 15px;
-}
-@media screen and (max-width: 767px) {
-
-  
-}
-@media screen and (max-width: 575px) {
-  
-}  */
 /*=========================================
 	Nightlife
 ==========================================*/
 #nightlife {
-    min-height: 100vh;
     background-color: #1F1F1F;
     border: none;
 }
@@ -729,7 +648,7 @@ top: -8px;
   border:none;
 }
 .nightlifeSorting{
-  margin-top: 1.5%;;
+  margin-top: 3vh;
 }
 
 /* The container <div>*/
@@ -742,7 +661,7 @@ top: -8px;
 }
 .nightlifeDropdown img{
   width: 25px;
-  margin-left: 80px;
+
 }
 /* The Dropdown Button */
 .dropbtn {
@@ -750,11 +669,21 @@ top: -8px;
   background-color: white;
   color: black;
   border: none;
-  padding: 8px 0 8px 8px;
+  padding: 8px 0 8px 25px;
   font-size: 16px;
   cursor: pointer;
   border-radius: 50px;
   transition: all 250ms ease-in-out;
+  margin-right: 20px;
+  background-image: url("../img/page/icon-dropdown.png");
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+  background-position: 95% center;
+  border-radius: 50px;
+  border: 2px solid white;
+  transition: all 250ms ease-in-out;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
 }
 
 
@@ -794,6 +723,7 @@ top: -8px;
 
 
 .nightlifeSearch {
+  width: 100%;
   padding: 8px 24px;
   background-color: transparent;
   transition: transform 250ms ease-in-out;
@@ -815,7 +745,7 @@ top: -8px;
 }
   .nightlifeEvents{
     overflow: hidden;
-    margin-top: 6%;
+    margin-top: 10%;
     margin-left: 2%;
     margin-right: 2%;
   }
@@ -896,16 +826,7 @@ top: -8px;
   border-radius: 50px;
   transition: all 250ms ease-in-out;
 }
-@media screen and (max-width: 1200px) {
-  .nightlifeItem{
-  }
-  .buyTicket {
 
-  }
-  .viewMore {
-  }
-  
-}
 @media screen and (max-width: 767px) {
   .nightlifeItem h3{
     margin-top: 16%;
@@ -919,7 +840,8 @@ top: -8px;
   .buyTicket {
     padding: 5px 5px  5px 5px;
   }
-  .viewMore {
+  .nightlifeSearch {
+    margin-top: 10px;
   }
   .nightlife{
     height: 500px !important;
@@ -929,8 +851,7 @@ top: -8px;
   h2{
     margin-top: 30px;
   }
-  .viewMore {
-  }
+  
   .nightlifeItem h3{
     text-align: center;
     font-size: 2.6rem;
@@ -949,7 +870,6 @@ top: -8px;
   }
   
   .buyTicket {
-    width:250px;
     padding: 15px 16px 15px 16px;
   }
   .nightlifeDropdown{
@@ -965,40 +885,37 @@ top: -8px;
   .nightlife{
     height: 1600px !important;
   }
-  .buyTicket {
-  }
 }
 @media screen and (max-width: 380px) {
   .nightlife{
     height: 1400px !important;
   }
-  .buyTicket {
-  }
+
 }
 /*=========================================
 	Benefits For Users
 ==========================================*/
-.benefitsForUsers{
+#benefitsForUsers{
   background-color: #333333;
 }
 .benefitsUsersContainer{
   overflow: hidden;
   margin-top: 10%;
-  margin-left: 10%;
 }
 .benefitsItems{
   float: left;
   width: 25%;
 }
-.bene1,.bene2{
-  margin-right: 9%;
-}
 .benefitsItems img{
-    width: 200px;
-    margin-left: 6%;
+    margin-left: 30%;
+    width: 40%;
+}
+.beneText{
+  margin-left: 10%;
 }
 .benefitsItems h3{
   margin-top: 10%;
+  font-size: 1.6vw;
 }
 .benefitsItems p{
   color: white;
@@ -1006,66 +923,39 @@ top: -8px;
   margin-top: 3%;
   font-weight: 400;
 }
+@media screen and (max-width:1200px) {
+.benefitsItems h3{
+  font-size: 2vw;
+}
+}
 @media screen and (max-width: 767px) {
-  .benefitsForUsers{
-    height: 650px !important;
-  }
-  .benefitsUsersContainer{
-    margin-top: 10%;
-    margin-left: 0;
-  }
   .benefitsItems{
-    float: left;
-    width: 100%;
-    overflow: hidden;
-  }
-  .bene1,.bene2{
-    margin-right: 3%;
+    margin: 5% auto;
   }
   .benefitsItems img{
-    width: 120px;
-    margin-left:0;
-    float: left;
+    width: 35%;
 }
 .benefitsItems h3{
- 
-  font-size: 2rem;
-}
-.benefitsItems p{
-  font-size: 1.2rem;
-}
-.beneText{
-  width:62%;
-  margin-left: 10%;
-  float: left;
+  margin-top: 10%;
+  font-size: 4.5vw;
 }
 }
-@media screen and (max-width: 520px) {
-  .benefitsItems{
-    margin-bottom: 20px;
-  }
-  .beneText{
-    width:45%;
-    margin-left: 6%;
-    float: left;
-  }
-} 
+
 /*=========================================
 Party Account
 ==========================================*/
-.partyAccount{
+#partyAccount{
   background-color: #1F1F1F;
 }
 .partyAccount p{
    color: white;
 }
 .buttonContainer{
-  width:45%;
   margin:0 auto;
 }
 .buttonContainer p{
   margin-top: 10%;
-  margin-left: 25%;
+  margin-left: 35%;
 }
 .buttonContainer img{
   width: 50px;
@@ -1083,55 +973,36 @@ Party Account
     transition: all 250ms ease-in-out;
 }
 .login{
-  margin-top: 25%;
+  margin-top: 20vh;
   background-image:linear-gradient(to right,#FFB443, #FF731E);
 }
 .signup{
   margin-top: 5%;
   background-color:#4F4F4F ;
 }
+
+
 @media screen and (max-width: 1200px) {
-  .buttonContainer{
-    width:55%;
-    margin:0 auto;
-  }
-}
-@media screen and (max-width: 960px) {
-  .buttonContainer{
-    width:65%;
-    margin:0 auto;
+  .buttonContainer p{
+    margin-left: 30% ;
   }
 }
 @media screen and (max-width: 767px) {
-  .accountButton{
-  width: 100%;
-  height: 70px;
+  .buttonContainer p{
+    margin-left: 25% ;
   }
-  .partyAccount{
-    height: 500px !important;
-    }
 }
-@media screen and (max-width: 575px) {
-  .accountButton{
-    width: 280px;
-    height: 55px;
-    }
-    /* .box{
-      height:500px;
-    } */
+@media screen and (max-width: 620px) {
     .buttonContainer p{
-      margin-left: 10%;
-    }
-    .buttonContainer{
-      width:70%;
+      margin-left: 15%;
     }
 } 
-
-@media screen and (max-width: 425px) {
-  .buttonContainer{
-    width:85%;
+@media screen and (max-width: 390px) {
+  .buttonContainer p{
+    margin-left: 0%;
   }
-}
+} 
+
 /*=========================================
 	Pitch Video
 ==========================================*/
