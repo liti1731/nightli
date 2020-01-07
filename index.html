@@ -21,8 +21,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- Google Font -->
-
-	<!-- <link href='fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'> -->
 	<link
 		href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,900&display=swap"
 		rel="stylesheet">
@@ -64,7 +62,7 @@
         Fixed Navigation
         ==================================== -->
 	<header id="navigation" class="navbar-fixed-top navbar">
-		<div class="container navigation-container">
+		<div class="container-fluid navigation-container">
 			<div class="navbar-header">
 				<!-- responsive nav button -->
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -105,83 +103,40 @@
         Home Slider
         ==================================== -->
 
-	<section id="slider">
-		<div id="container box">
-
-
-			<!-- <div id="navi"> -->
-			<!--					  <div class="carousel-inner" role="listbox">
-						  <div class="row ml-0 mr-0">
-							 <div class="col-xs-12 col-md-12 col-lg-6 main-title">
-								  <h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated"><span>coming soon!</span></h2>
-								  <h3 data-wow-duration="1000ms" class="wow slideInLeft animated"><span class="color">
-										nightlife at the next level</span>
-								  </h3>
-								  <p data-wow-duration="1000ms" class="wow slideInRight animated">stay tuned</p>
-								  <ul class="social-links text-center">
-									  <li><a href="https://www.linkedin.com/company/15871568"><i class="fa fa-linkedin fa-lg"></i></a></li>
-									  <li><a href="https://www.instagram.com/nightli_app"><i class="fa fa-instagram fa-lg"></i></a></li>
-									  <li><a href="https://www.facebook.com/nightli.appen"><i class="fa fa-facebook fa-lg"></i></a></li>
-								  </ul>
-							  </div>
-						  </div>
-					  </div>-->
-			<!-- </div> -->
-			<div id="infoi">
-				<!-- <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"> -->
-
-				<!-- Indicators bullet -->
-				<!-- <ol class="carousel-indicators">
-							<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-						</ol> -->
-				<!-- End Indicators bullet -->
-
-				<!-- Wrapper for slides -->
-				<!-- <div id="carousel-parallax" class="carousel-inner" role="listbox"> -->
-				<!-- single slide -->
-				<div class="parallax-overlay item active">
+	<section id="landing" >
 					<video autoplay muted loop id="landingVideo">
 						<source src="./img/page/main-page/landing3.mp4" type="video/mp4">
 					</video>
-					<!-- <img id="landingVideo" src='./img/page/main-page/landing4.png'> -->
-					<div class='itemsOnLanding'>
-						<h1>Nightlife for everyone<span><img src='./img/page/period.png'></span></h1>
-						<p>Safe, equal and crazy fun!</p>
-						<div class="downloadButtons">
-							<a href="#"><img src='./img/page/main-page/apple-download.png'></a>
-							<a href="#"><img src='./img/page/main-page/google-download.png'></a>
+		            <div class='box itemsOnLanding '>
+						<div class='container-fluid'>
+							<h1>Nightlife for everyone<span><img src='./img/page/period.png'></span></h1>
+							<p>Safe, equal and crazy fun!</p>
+							<div class="downloadButtons col-md-3 col-6">
+								<a href="#"><img src='./img/page/main-page/apple-download.png'></a>
+								<a href="#"><img src='./img/page/main-page/google-download.png'></a>
+							</div>
 						</div>
 					</div>
-
-
-				</div>
-				<!-- end single slide -->
-				<!-- </div> -->
-				<!-- End Wrapper for slides -->
-
-				<!-- </div> -->
-			</div>
-		</div>
 	</section>
 
 	<!--
         End Home SliderEnd
 		==================================== -->
+	
 	<!--
        Nightlife
         ==================================== -->
 
-	<section id="nightlife">
-		<div class="container-fluid container-fluid-no-limit">
+	<section id="nightlife" class='box'>
+		<div class="container-fluid">
 			<div class="row nightlifeSpacing">
-				<div class="col-10">
-					<h2>Explore nightlife</h2>
-				</div>
+		       <h2>Explore nightlife</h2>
+				
 			</div>
 			<div class="row nightlifeSorting nightlifeSpacing">
-				<div class='col-lg-3 col-md-4 col-sm-5 col-6'>
+				<div class='col-lg-4 col-md-6 col-sm-10 mx-md-0 mx-5'>
 					<div class="nightlifeDropdown">
-						<button class="dropbtn">Stockholm<span><img src="./img/page/icon-dropdown.png"><span></button>
+						<div class="dropbtn">Stockholm</div>
 						<div class="dropdown-content">
 							<a href="#">Stockholm</a>
 							<a href="#">Uppsala</a>
@@ -189,12 +144,12 @@
 						</div>
 					</div>
 				</div>
-				<div class='col-md-3 col-sm-5 col-6'>
+				<div class='col-lg-4 col-md-6 col-sm-10 mx-md-0 mx-5'>
 					<input class="nightlifeSearch" type="text" placeholder="Search">
 				</div>
 			</div>
 			<div class="row nightlifeEvents justify-content-center">
-				<div class="col-md-4 col-11">
+				<div class="col-md-4 col-10">
 					<a href='#'>
 						<div class='nightlifeItem item1'>
 							<div class="infoTicketSection">
@@ -204,7 +159,7 @@
 							<div class='buyTicketSection'>
 								<a href='#'>
 									<div class="row justify-content-center">
-										<div class="col-sm-8 col-6">
+										<div class="col-sm-10 col-10">
 											<button class="buyTicket">Buy ticket</button>
 										</div>
 									</div>
@@ -213,7 +168,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="col-md-4 col-11">
+				<div class="col-md-4 col-10">
 					<a href='#'>
 						<div class='nightlifeItem item2'>
 							<div class="infoTicketSection">
@@ -223,7 +178,7 @@
 							<div class='buyTicketSection'>
 								<a href='#'>
 									<div class="row justify-content-center">
-										<div class="col-sm-8 col-6">
+										<div class="col-sm-10 col-10">
 											<button class="buyTicket">Buy ticket</button>
 										</div>
 									</div>
@@ -232,7 +187,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="col-md-4 col-11">
+				<div class="col-md-4 col-10">
 					<a href='#'>
 						<div class='nightlifeItem item3'>
 							<div class="infoTicketSection">
@@ -242,7 +197,7 @@
 							<div class='buyTicketSection'>
 								<a href='#'>
 									<div class="row justify-content-center">
-										<div class="col-sm-8 col-6">
+										<div class="col-sm-10 col-10">
 											<button class="buyTicket">Buy ticket</button>
 										</div>
 									</div>
@@ -254,7 +209,7 @@
 			</div>
 
 			<div class="row justify-content-center">
-				<div class="col-md-5 col-10">
+				<div class="col-md-5 col-8">
 					<a href='#'><button class="viewMore">More clubs & events...</button></a>
 				</div>
 			</div>
@@ -266,28 +221,33 @@
 	<!--
         Benefits for users
 		==================================== -->
-	<section id="benefitsForUsers" class="benefitsForUsers box">
-		<h2>Why use the free app?</h2>
-		<div class='benefitsUsersContainer'>
-			<div class='benefitsItems bene1'>
-				<img src="./img/page/main-page/benefit1.png">
-				<div class='beneText'>
-					<h3>Explore amazing nightclubs</h3>
-					<p>Find the best parties based on your preferences and network. </p>
-				</div>
+	<section id="benefitsForUsers" class="box">
+		<div class="container-fluid"> 	
+			<div class="row">
+				<h2>Why use the free app?</h2>
+				
 			</div>
-			<div class='benefitsItems bene2'>
-				<img src="./img/page/main-page/benefit2.png">
-				<div class='beneText'>
-					<h3>Build customer credibility</h3>
-					<p>It’s not about who you “know”, it’s who you are!</p>
+			<div class='benefitsUsersContainer row'>
+				<div class='benefitsItems col-md-4 col-10'>
+					<img  src="./img/page/main-page/benefit1.png">
+					<div class='beneText col-lg-10 col-md-12 col-10'>
+						<h3>Explore amazing nightclubs</h3>
+						<p>Find the best parties based on your preferences and network. </p>
+					</div>
 				</div>
-			</div>
-			<div class='benefitsItems bene3'>
-				<img src="./img/page/main-page/benefit3.png">
-				<div class='beneText'>
-					<h3>Share the benefits </h3>
-					<p>Earn rewards and plan the night together with your friends.</p>
+				<div class='benefitsItems col-md-4 col-10'>
+					<img src="./img/page/main-page/benefit2.png">
+					<div class='beneText col-lg-10 col-md-12 col-10'>
+						<h3>Build customer credibility</h3>
+						<p>It’s not about who you “know”, it’s who you are!</p>
+					</div>
+				</div>
+				<div class='benefitsItems col-md-4 col-10'>
+					<img  src="./img/page/main-page/benefit3.png">
+					<div class='beneText  col-lg-10 col-md-12 col-10'>
+						<h3>Share the benefits </h3>
+						<p>Earn rewards and plan the night together with your friends.</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -298,17 +258,21 @@
 	<!--
         Party Account
 		==================================== -->
-	<section id="partyAccount" class="partyAccount box">
-		<h2>Party account</h2>
-		<P>Download our app or use nightli™️ webview to manage your bookings, level and more.</P>
-		<div class='buttonContainer'>
-			<a href='#'><button class="login accountButton">
-					<h3>Login to existing account</h3>
-				</button></a>
-			<a href='#'><button class="signup accountButton">
-					<h3>Create new account</h3>
-				</button></a>
-			<p>or share page to invite a friend <a href='#'><img src='./img/page/icon-repost.png'></a></p>
+	<section id="partyAccount" class="box">
+		<div class="container-fluid"> 	
+			<h2>Party account</h2>
+			<P>Download our app or use nightli™️ webview to manage your bookings, level and more.</P>
+			 <div class='row'>
+				<div class='buttonContainer justify-content-center  col-md-8 col-sm-10'>
+					<a href='#'><button class="login accountButton">
+							<h3>Login to existing account</h3>
+						</button></a>
+					<a href='#'><button class="signup accountButton">
+							<h3>Create new account</h3>
+						</button></a>
+					<p >or share page to invite a friend <a href='#'><img class='col-20' src='./img/page/icon-repost.png'></a></p>
+				</div>
+			</div>
 		</div>
 	</section>
 	<!--
