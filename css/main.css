@@ -743,6 +743,9 @@ top: -8px;
   margin-left: 2%;
   margin-right: 2%;
 }
+.nightlifeSpacing h2{
+  margin-left:20px;
+}
   .nightlifeEvents{
     overflow: hidden;
     margin-top: 10%;
@@ -1484,7 +1487,7 @@ footer
 
 .footer-single img {
     width: 55px;
-    margin-top: 5px;
+  
     margin-left: 20%;
     margin-bottom: 4px;
 }
