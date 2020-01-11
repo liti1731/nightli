@@ -42,9 +42,6 @@ $(document).ready(function(){
     /*	Menu item fix login action
     /* ========================================================================= */
     $('.linkfix-home').on('click',function() {
-        window.location.href = "./index.html";
-    });
-    $('.linkfix-contact a').on('click',function() {
         window.location.href = "./index.html#nightlife";
     });
     $('.linkfix-login a').on('click',function() {

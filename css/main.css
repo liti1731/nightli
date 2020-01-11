@@ -26,7 +26,6 @@ body {
   width: 100%;
   min-height: 100vh;
   padding: 10vh 8%;
-  margin-top: -10px;
  }
  
 ol, ul {
@@ -158,6 +157,11 @@ body > section,
         bottom: 6px;
     }
 }
+@media screen and (max-width: 320px) {
+.img-logo {
+  width: 200px;
+}
+}
 .devider:before {
   right: 10px;
 }
@@ -229,6 +233,7 @@ body > section,
     border-radius: 10px;
     transition: all 250ms ease-in-out;
     width: 100%;
+    font-size: 1.5rem;
 }
 .businessButtonBackground:hover, .businessButtonBackgroundCurrent{
     background-image:linear-gradient(to right,#FFB443, #FF731E);
@@ -262,12 +267,7 @@ body > section,
 .navbar-header{
   width: 20%;
 }
-.collapse.in.navbar-collapse {
-    border-style: solid;
-    border-color: #fff;
-    background: #3e3e3e;
-    border-width: thin;
-}
+
 
 .collapsing.navbar-collapse {
     border-style: solid;
@@ -292,7 +292,7 @@ body > section,
 .nav > li {
     text-align:center;
 }
-.navbar-nav li a.current,
+.current,
 .navbar-nav li a:focus,
 .navbar-nav li a:hover {
     background-color: transparent;
@@ -304,6 +304,12 @@ body > section,
 }
 
 @media screen and (max-width: 768px) {
+  .collapse.in.navbar-collapse {
+    border-style: solid;
+    border-color: #fff;
+    background: #3e3e3e;
+    border-width: thin;
+}
  
   .businessButton{
     padding: 25px 35px !important;
@@ -669,6 +675,9 @@ Landing
   }
   .nightlife{
     height: 500px !important;
+  }
+  .nightlifeSpacing{
+    margin-left: 5%;
   }
 }
 @media screen and (max-width: 575px) {

@@ -7,17 +7,12 @@
 .aboutUs{
   overflow: hidden;
 }
-.aboutUs::before {
-  content: "";
-  position: absolute;
-  background-position: 50% 50%;
-  top: 0; left: 0;
+#aboutUs{
   width: 100%; height: 100%;
   background-image: url('../../img/page/about/about-bg.jpg');
-  filter: brightness(9%);
   background-repeat:no-repeat ;
   background-size: cover;
-  z-index: -1;
+  background-position: 50% 50%;
 }
 .aboutUs h2{
   margin-top: 5vh;
@@ -106,22 +101,12 @@
 /*=========================================
  KTH/ NEWS
 ==========================================*/
-.news{
+.news {
   overflow: hidden;
- height: 100%;
-}
-.news::after {
-  content: "";
-  position: absolute;
-  background-position: 50% 50%;
-  top: 0; left: 0;
-  width: 100%; height: 120%;
+  width: 100%; height: 100%;
   background-image: url('../../img/page/about/kth-bg.jpg');
-  filter: brightness(15%);
   background-repeat:no-repeat ;
   background-size: cover;
-  margin-top: 100vh;
-  z-index: -1;
 }
 .news h2{
   margin-bottom: 4%;
