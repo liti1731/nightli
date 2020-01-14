@@ -355,6 +355,7 @@ Landing
   top: 0;
   bottom: 0; */
   width: 100%;
+  min-height: 600px; 
   height: 100vh; 
   overflow: hidden;
 }
