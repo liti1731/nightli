@@ -359,7 +359,7 @@ Landing
   top: 0;
   bottom: 0; */
   width: 100%;
-  min-height: 600px; 
+  min-height: 700px; 
   height: 100vh; 
   overflow: hidden;
 }
@@ -413,7 +413,7 @@ Landing
 
 @media screen and (max-width: 1200px) {
   .itemsOnLanding h1{
-    font-size: 6vw;
+    font-size: 5vw;
   }
   .downloadButtons{
     margin-left: 75%; 
@@ -422,7 +422,7 @@ Landing
 }
 @media screen and (max-width: 1000px) {
   .itemsOnLanding h1{
-    font-size: 6vw;
+    font-size: 5vw;
   }
  
 }
