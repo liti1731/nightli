@@ -413,7 +413,7 @@ Landing
 
 @media screen and (max-width: 1200px) {
   .itemsOnLanding h1{
-    font-size: 5vw;
+    font-size: 6vw;
   }
   .downloadButtons{
     margin-left: 75%; 
@@ -422,7 +422,7 @@ Landing
 }
 @media screen and (max-width: 1000px) {
   .itemsOnLanding h1{
-    font-size: 5vw;
+    font-size: 6vw;
   }
  
 }
