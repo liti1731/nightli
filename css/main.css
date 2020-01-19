@@ -2,7 +2,9 @@
 /* =================================== */
 /*	Basic Style 
 /* =================================== */
-
+.row::before{
+  display: inline-block;
+}
 body {
     background-color: #fff;
     font-family:  'Nunito Sans', sans-serif;
@@ -15,17 +17,21 @@ body {
 
 .container-fluid {
     max-width: 1280px;
-    /* margin-top: 15vh; */
+    padding: 0 8%;
 }
 
 .container-fluid-no-limit {
     max-width: 1980px;
 }
+.container-fluid-labtop{
+  max-width: 1280px;
+  margin:0 auto;
+}
 .box{
   margin:0;
   width: 100%;
   min-height: 100vh;
-  padding: 10vh 8%;
+  padding: 10vh 0;
  }
  
 ol, ul {
@@ -99,12 +105,12 @@ span.color {
 
 body > section,
 .footer {
-	padding: 70px 0;
+	padding: 30px 0;
 }
 
 .img-logo {
-    padding-top: 5px;
-    width: 240px;
+    padding-top: 14px;
+    width: 90px;
 }
 
 .sec-title {
@@ -157,11 +163,7 @@ body > section,
         bottom: 6px;
     }
 }
-@media screen and (max-width: 320px) {
-.img-logo {
-  width: 200px;
-}
-}
+
 .devider:before {
   right: 10px;
 }
@@ -222,6 +224,7 @@ body > section,
 ==========================================*/
 .businessButton{
   padding: 15px 35px !important;
+  padding-right: 0;
 }
 .businessButtonBackground{
     background-image:linear-gradient(to right,#C8B266, #B66D43);
@@ -268,7 +271,9 @@ body > section,
   width: 20%;
 }
 
-
+.navbar-right{
+  margin-right:4.5%;
+}
 .collapsing.navbar-collapse {
     border-style: solid;
     border-color: #fff;
@@ -283,12 +288,7 @@ body > section,
     padding: 25px 35px;
     cursor: pointer;
 }
-.container-fluid>.navbar-collapse{
-  margin-right: 5% !important;
-}
-.navbar-brand{
-  margin-left: 4% !important;
-}
+
 .nav > li {
     text-align:center;
 }
@@ -299,8 +299,8 @@ body > section,
     border-top: 2px solid #fff;
     color: #fff;
 }
-.navigation-container{
-  padding-right: 0;
+.navbar-toggle{
+  margin-right: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -313,6 +313,7 @@ body > section,
  
   .businessButton{
     padding: 25px 35px !important;
+    padding-right: 0 !important;
   }
     .current{
 
@@ -320,7 +321,7 @@ body > section,
         background-color:#1F1F1F;
     }
     .businessButtonBackground{
-      margin-left: 35%;
+      margin-left: 32%;
         padding: 4px 15px 4px 15px;
         width:33%;
         min-width: 100px;
@@ -338,6 +339,9 @@ body > section,
     }
     .container-fluid>.navbar-collapse{
       margin-right: 0 !important;
+    }
+    .navbar-right{
+      margin-right:0;
     }
 }
 @media screen and (max-width: 575px) {
@@ -393,6 +397,7 @@ Landing
 .downloadButtons{
  margin-left: 75%;
  margin-top: 15%;
+ padding-right: 0;
 }
 .downloadButtons a{
   display: block;
@@ -464,15 +469,15 @@ Landing
 	Nightlife
 ==========================================*/
 #nightlife {
-    background-color: #1F1F1F;
+    background-color: #171527;
     border: none;
 }
-.nightlife{
-  background-color: #1F1F1F;
-  border:none;
+.h2Center{
+  text-align: center;
 }
 .nightlifeSorting{
   margin-top: 3vh;
+  margin-left: 25%;
 }
 
 /* The container <div>*/
@@ -563,18 +568,13 @@ Landing
   backface-visibility: hidden;
   transform-style: preserve-3d;
   }
-.nightlifeSpacing{
-  margin-left: 2%;
-  margin-right: 2%;
-}
-.nightlifeSpacing h2{
-  margin-left:20px;
+
+.nightlifeDropdownLeftPadding{
+  padding:0;
 }
   .nightlifeEvents{
     overflow: hidden;
     margin-top: 10%;
-    margin-left: 2%;
-    margin-right: 2%;
   }
   .nightlifeItem{
     border-radius: 30px;
@@ -659,6 +659,13 @@ Landing
   }
 }
 @media screen and (max-width: 767px) {
+  .nightlifeSearchLeftPadding{
+    padding:0;
+  }
+  .nightlifeEvents{
+    margin-right: 0%;
+    margin-left: 0%;
+  }
   .nightlifeItem h3{
     margin-top: 16%;
     font-size: 4vw;
@@ -732,76 +739,87 @@ Landing
 	Benefits For Users
 ==========================================*/
 #benefitsForUsers{
-  background-color: #333333;
+  background-color: #32313A;
+}
+#benefitsForUsers h2{
+  margin-top: 10vh;
 }
 .benefitsUsersContainer{
   overflow: hidden;
-  margin-top: 10%;
 }
 .benefitsItems{
   float: left;
-  width: 25%;
+  margin-top: 10%;
 }
 .benefitsItems img{
     margin-left: 20%;
     width: 60%;
 }
-.beneText{
-  margin-left: 10%;
-}
+
 .benefitsItems h3{
   margin-top: 10%;
   font-size: 1.6vw;
+  text-align: center;
+  font-weight: bold;
 }
 .benefitsItems p{
+  text-align: center;
   color: white;
   font-style: italic;
   margin-top: 3%;
   font-weight: 400;
 }
-@media screen and (max-width:1200px) {
-.benefitsItems h3{
-  font-size: 2vw;
-}
-}
 @media screen and (max-width: 767px) {
-  .benefitsItems{
-    margin: 5% auto;
-  }
-  .benefitsItems img{
-    width: 35%;
-    margin-left: 30%;
-}
-.benefitsItems h3{
-  margin-top: 10%;
-  font-size: 4.5vw;
-}
-}
 
+  .benefitsItems img{
+    margin-left: 25%;
+    width: 50%;
+   }
+.benefitsItems h3{
+  font-size: 3.5vw;
+  margin-top: 0;
+}
+}
+@media screen and (max-width: 600px) {
+.benefitsItems h3{
+  font-size: 4vw;
+}
+}
+@media screen and (max-width: 420px) {
+.benefitsItems h3{
+  font-size: 5vw;
+}
+}
 /*=========================================
 Party Account
 ==========================================*/
 #partyAccount{
-  background-color: #1F1F1F;
+  background-color: #171527;
+}
+#partyAccount h2{
+  margin-top: 20vh;
+  margin-bottom: 10px;
 }
 .partyAccount p{
    color: white;
 }
 .buttonContainer{
   margin:0 auto;
+  max-width: 520px !important;
 }
 .buttonContainer p{
   margin-top: 10%;
-  margin-left: 35%;
+  display: block;
+  margin-left: 27%;
 }
 .buttonContainer img{
-  width: 50px;
-  margin-top:-10px ;
+  width: 15%;
+  margin-left: 10px;
   cursor: pointer;
 }
 .accountButton{
     width: 100%;
-    height: 90px;
+    height: 80px;
     border: none;
     padding: 10px 10px 8px;
     font-size: 16px;
@@ -810,7 +828,7 @@ Party Account
     transition: all 250ms ease-in-out;
 }
 .login{
-  margin-top: 15vh;
+  margin-top: 40px;
   background-image:linear-gradient(to right,#FFB443, #FF731E);
 }
 .signup{
@@ -819,9 +837,24 @@ Party Account
 }
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
   .buttonContainer p{
-    margin-left: 30% ;
+    margin-left: 25% ;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .buttonContainer p{
+    margin-left: 22% ;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .buttonContainer p{
+    margin-left: 15% ;
+  }
+}
+@media screen and (max-width: 900px) {
+  .buttonContainer p{
+    margin-left: 10% ;
   }
 }
 @media screen and (max-width: 767px) {
@@ -829,10 +862,15 @@ Party Account
     margin-left: 25% ;
   }
 }
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 640px) {
     .buttonContainer p{
       margin-left: 15%;
     }
+} 
+@media screen and (max-width: 470px) {
+  .buttonContainer p{
+    margin-left: 5%;
+  }
 } 
 @media screen and (max-width: 390px) {
   .buttonContainer p{
@@ -854,12 +892,10 @@ footer
 
 .footer {
   margin:0;
- width: 100%;
- 
- padding: 5% 8%;
+  width: 100%;
   background-color: #000000;
   color: #fff;
-  padding-top: 5%;
+  height: auto;
 }
 
 
@@ -889,8 +925,6 @@ footer
 
 .footer-single img {
     width: 55px;
-  
-    margin-left: 20%;
     margin-bottom: 4px;
 }
 
@@ -915,9 +949,14 @@ footer
 }
 .footerTextContainer{
      width: 30%;
+     float: left;
+}
+.footerSpacing{
+float: left;
+  margin-left: 0 !important;
 }
 .socialMediaContainer{
- margin-left: 45%;
+ float: right;
 }
 .socialMediaContainer a{
   display: block;
@@ -933,30 +972,11 @@ footer
   right: 25px;
   z-index: 9;
 }
-
-@media screen and (max-width: 767px) {
-
-  .socialMediaContainer{
-    margin-left: 40%;
-   }
-   .footerTextContainer{
-    margin-left: -30%;
-   }
-  
-   .footer-single img {
-    margin-left: -5%;
+@media screen and (max-width: 500px) {
+  .footerTextContainer{
+    width: 45%;
    }
 }
-@media screen and (max-width: 575px) {
-  .footerTextContainer{
-    margin-left: -75%;
-    width: 40%;
-   }
-.socialMediaContainer{
-  margin-left: 10%;
- }
-} 
-
 /*=========================================
 	Contact Us
 ==========================================*/

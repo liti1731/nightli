@@ -39,12 +39,11 @@
 }
 .accountLogin{
     overflow: hidden;
-    background-color: #1F1F1F;
+    background-color: #171527;
     text-align: center;
 }
 
 .accountLoginContainer{
-  
     max-width: 400px;
     margin:0 auto;
 }
@@ -87,6 +86,9 @@
     height: 60px;
     width: 100%;
     margin-top: 2%;
+    -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
 }
   
 .accountMiddleFormContainer{
@@ -153,20 +155,19 @@
 @media screen and (max-width: 676px) {
  
     #goBack{
-      margin-left: 0%;
-      margin-top: 10%;}
+      margin-left: 7%;}
 }
   
 @media screen and (max-width: 450px) {
-  #goBack{
-
-    margin-top: 18%;}
   
     .or{
         margin: 0 4%;
     }
     .checkBoxButton{
         margin-left:24%;
+    }
+    .accountLoginContainer{
+        width: 82%;
     }
 }
 

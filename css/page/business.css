@@ -13,13 +13,12 @@
     background-position: 50% 50%;
   }
   .businessText{
-      width: 35%;
       margin-top: 7%;
       color: white;
+      padding:0;
   }
   .demo{
-    margin-left: 75%;
-    margin-top: 22%;
+    margin-top: 6%;
     margin-right: 10%;
     width:200px;
     background-image:linear-gradient(to right,#FFB443, #FF731E);
@@ -44,60 +43,24 @@
     font-size: 1.5rem;
   }
   
-  @media screen and (max-width: 1200px) {
-    .businessText{
-        margin-top: 11%;
-    }
  
-  }  
-  @media screen and (max-width: 960px) {
-  
-  .businessText{
-      margin-top: 15%;
-      width: 45%;
-  }
-
-  .demo{
-    margin-left: 65%;
-  }
-}
-  
   @media screen and (max-width: 767px) {
- 
       .businessLanding h1{
       font-size: 5rem;
     }
       .businessLanding{
       width: 100%;
     }
-    .businessText{
-        margin-top: 20%;
-        width: 75%;
-    }
-  
-    .demo{
-      margin-left: 55%;
-    }
   }
   @media screen and (max-width: 575px) {
+    .businessText{
+      width: 70% !important;
+    }
     .businessLanding {
         height: 550px;
     }
-    .demo{
-      margin-left: 40%;
-      margin-top: 15%;
-    }
-    .businessText{
-        width: 90%;
-        margin-top: 30%;
-    }
     .businessLanding h1{
       font-size: 4rem;
-    }
-  } 
-  @media screen and (max-width: 575px) {
-    .demo{
-      margin-left: 0%;
     }
   } 
 
@@ -105,7 +68,10 @@
 Benefits For Business
 ==========================================*/
   #benefitsForBusiness{
-    background-color: #1F1F1F;
+    background-color: #32313A;
+  }
+  #benefitsForBusiness h2{
+    text-align: center;
   }
   .benefitsBusinessContainer{
     margin-top: 5%;
@@ -122,7 +88,7 @@ Benefits For Business
   .benefitsBusinessText{
     margin-top: 3%;
     float: left;
-    width: 75%;
+    width: 74%;
   }
   .bene4,.bene6{
     margin-left: 7%;
@@ -141,11 +107,11 @@ Benefits For Business
     .benefitsBusinessItem img{
       width: 19%;
     }
-    .benefitsBusinessText{
+    /* .benefitsBusinessText{
       margin-top: 3%;
       float: left;
       width: 70%;
-    }
+    } */
   }
   @media screen and (max-width: 767px) {
     .benefitsBusinessItem img{
@@ -183,7 +149,7 @@ contact
 ==========================================*/
 .contact{
     overflow: hidden;
-    background-color: #333333;
+    background-color: #171527;
     position: relative;
   }
   .contact h2{
@@ -192,12 +158,10 @@ contact
   .contact p{
     color: white;
   }
-  .contact img{
-    width: 13%;
-    position: absolute;
-    top: 14%;
-    right:13%;
+  .contactContainer{
+    overflow: hidden;
   }
+ 
   .contact button{
     margin-top: 5%;
     width:150px;
@@ -211,33 +175,47 @@ contact
     transition: all 250ms ease-in-out;
   }
   .contactForm{
+    float: left;
     margin-top: 5%;
+    width: 50%;
+  }
+  .contact img{
+    float: right;
+    padding: 0;
+    margin-top: 20px;
   }
   .contactItem{
     margin-bottom: 3%;
+    outline: none;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
   }
   .contactName{
     height: 40px;
+    width: 100%;
   }
   .contactEmail{
     height: 40px;
-    width: 250px;
+    width: 48%;
     
   }
   .contactPhone{
     height: 40px;
-    width: 250px;
-    margin-left: 2%;
+    width: 47.9%;
+    margin-left: 3%;
   }
   .contactContent{
     height: 200px;
-    width: 95%;
+    width: 100%;
     
   }
   @media screen and (max-width: 767px) {
     .contact img{
-      top: 10%;
-     width: 13%;
+      visibility: hidden;
+    }
+    .contactForm{
+      width: 100%;
     }
     .contact h2{
         margin-top: 6%;
@@ -249,11 +227,7 @@ contact
       height: 700px;
     }
   }
-  @media screen and (max-width: 611px) {
-    .contactPhone{
-      margin-left: 0%;
-    }
-  }
+
   @media screen and (max-width: 575px) {
    .contact{
      height: 650px;
@@ -263,16 +237,13 @@ contact
 Business Account
 ==========================================*/
 .businessAccount{
-    background-color: #1F1F1F;
+    background-color: #32313A;
     min-height: 90vh !important;
   }
   .businessAccount p{
      color: white;
   }
-  .buttonContainer{
-    width:45%;
-    margin:0 auto;
-  }
+  
   .buttonContainer p{
     margin-top: 10%;
     margin-left: 25%;
@@ -282,62 +253,7 @@ Business Account
     margin-top:-10px ;
     cursor: pointer;
   }
-  .accountButton{
-      width: 100%;
-      height: 90px;
-      border: none;
-      padding: 10px 10px 8px;
-      font-size: 16px;
-      cursor: pointer;
-      border-radius: 50px;
-      transition: all 250ms ease-in-out;
-  }
-  .login{
-    margin-top: 30%;
-    background-image:linear-gradient(to right,#FFB443, #FF731E);
-  }
-
-  @media screen and (max-width: 1200px) {
-    .buttonContainer{
-      width:55%;
-      margin:0 auto;
-    }
-  }
-  @media screen and (max-width: 960px) {
-    .buttonContainer{
-      width:65%;
-      margin:0 auto;
-    }
-  }
-  @media screen and (max-width: 767px) {
-    .accountButton{
-        height: 80px;
-    }
-    .buttonContainer{
-        width:75%;
-        margin:0 auto;
-      }
+.loginMargin{
+  margin-top: 20vh !important;
+}
   
-  }
- 
-  @media screen and (max-width: 575px) {
-    .accountButton{
-        height: 60px;
-    }
-    .accountButton h3{
-       font-size: 1.7rem;
-      }
-      .buttonContainer{
-        width:70%;
-      }
-      .login{
-        margin-top: 40%;
-      }
- 
-  }
-  @media screen and (max-width: 400px) {
-      .login{
-        margin-top: 50%;
-      }
- 
-  }

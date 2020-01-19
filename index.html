@@ -62,8 +62,9 @@
         Fixed Navigation
         ==================================== -->
 	<header id="navigation" class="navbar-fixed-top navbar">
-		<div class="container-fluid navigation-container">
-			<div class="navbar-header">
+		
+		<div class="navigation-container container-fluid-labtop">
+			<div class="container-fluid navbar-header">
 				<!-- responsive nav button -->
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 					<span class="sr-only">Toggle navigation</span>
@@ -131,12 +132,9 @@
 
 	<section id="nightlife" class='box'>
 		<div class="container-fluid">
-			<div class="row nightlifeSpacing">
-		       <h2>Explore nightlife</h2>
-				
-			</div>
+		    <h2 class="nightlifeSpacing h2Center">Explore nightlife</h2>
 			<div class="row nightlifeSorting nightlifeSpacing">
-				<div class='col-lg-4 col-md-6 col-sm-10 mx-md-0 mx-5'>
+				<div class='col-lg-4 col-md-4 col-sm-10 mx-md-0 mx-5 nightlifeDropdownLeftPadding'>
 					<div class="nightlifeDropdown">
 						<div class="dropbtn">Stockholm</div>
 						<div class="dropdown-content">
@@ -146,7 +144,7 @@
 						</div>
 					</div>
 				</div>
-				<div class='col-lg-4 col-md-6 col-sm-10 mx-md-0 mx-5'>
+				<div class='col-lg-4 col-md-4 col-sm-10 mx-md-0 mx-5 nightlifeSearchLeftPadding'>
 					<input class="nightlifeSearch" type="text" placeholder="Search">
 				</div>
 			</div>
@@ -225,28 +223,25 @@
 		==================================== -->
 	<section id="benefitsForUsers" class="box">
 		<div class="container-fluid"> 	
-			<div class="row">
-				<h2>Why use the free app?</h2>
-				
-			</div>
+		    <h2 class='h2Center'>Why use the free app?</h2>
 			<div class='benefitsUsersContainer row'>
-				<div class='benefitsItems col-md-4 col-10'>
+				<div class='benefitsItems col-md-4 col-12'>
 					<img  src="./img/page/main-page/benefit1.png">
-					<div class='beneText col-lg-10 col-md-12 col-10'>
+					<div class='beneText col-12'>
 						<h3>Explore amazing nightclubs</h3>
 						<p>Find the best parties based on your preferences and network. </p>
 					</div>
 				</div>
-				<div class='benefitsItems col-md-4 col-10'>
+				<div class='benefitsItems col-md-4 col-12'>
 					<img src="./img/page/main-page/benefit2.png">
-					<div class='beneText col-lg-10 col-md-12 col-10'>
+					<div class='beneText col-12'>
 						<h3>Build customer credibility</h3>
 						<p>It’s not about who you “know”, it’s who you are!</p>
 					</div>
 				</div>
-				<div class='benefitsItems col-md-4 col-10'>
+				<div class='benefitsItems col-md-4 col-12'>
 					<img  src="./img/page/main-page/benefit3.png">
-					<div class='beneText  col-lg-10 col-md-12 col-10'>
+					<div class='beneText col-12'>
 						<h3>Share the benefits </h3>
 						<p>Earn rewards and plan the night together with your friends.</p>
 					</div>
@@ -262,17 +257,17 @@
 		==================================== -->
 	<section id="partyAccount" class="box">
 		<div class="container-fluid"> 	
-			<h2>Party account</h2>
-			<P>Download our app or use nightli™️ webview to manage your bookings, level and more.</P>
+			<h2 class='h2Center'>Party account</h2>
+			<P class='h2Center'>Download our app or use nightli™️ webview to manage your bookings, level and more.</P>
 			 <div class='row'>
-				<div class='buttonContainer justify-content-center  col-md-8 col-sm-10'>
+				<div class='buttonContainer justify-content-center  col-md-6 col-sm-10'>
 					<a href='#'><button class="login accountButton">
 							<h3>Login</h3>
 						</button></a>
 					<a href='#'><button class="signup accountButton">
 							<h3>Create new account</h3>
 						</button></a>
-					<p >or share page to invite a friend <a href='#'><img class='col-20' src='./img/page/icon-repost.png'></a></p>
+					<div class='col-md-12 col-sm-10'><a href='#'></a><p>or share page to invite a friend <img class='col-20' src='./img/page/icon-share.png'></a></div>
 				</div>
 			</div>
 		</div>
@@ -334,12 +329,11 @@
         ====================================-->
 	<footer id="footer" class="footer">
 
-		<div class="row">
-
+       <div class="footerContainer container-fluid">
 			<!-- <div class="col-md-3 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms">
 					</div> -->
 
-			<div class="col-md-2 col-sm-6 col-xs-6 wow fadeInUp animated" data-wow-duration="500ms"
+			<div class="footerSpacing col-md-2 col-3 wow fadeInUp animated" data-wow-duration="500ms"
 				data-wow-delay="300ms">
 				<a href='https://tribed.eu/'>
 					<div class="footer-single footer-logo">
@@ -390,7 +384,7 @@
 				<a href="https://www.facebook.com/Nightli.TM" style=" margin-right: 5px;"><i
 						class="fa fa-facebook fa-2x b"></i></a>
 			</div>
-
+        </div>
 	</footer>
 
 	<a href="javascript:void(0);" id="back-top" style="color: #ffffff"><i class="fa fa-angle-up fa-3x"></i></a>

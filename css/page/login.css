@@ -28,12 +28,13 @@
 }
 .accountLogin{
     overflow: hidden;
-    background-color: #1F1F1F;
+    background-color: #171527;
     text-align: center;
 }
 
 .accountLoginContainer{
     max-width: 400px;
+    margin:0 auto;
 }
 .accountLoginContainer h2{
     margin-top: 15%;
@@ -55,7 +56,7 @@
 }
 .line{
     border-top:solid 2px #787878 ;
-    width: 40%;
+    width: 39.6%;
     display: inline-block;
     float:left;
     margin:0;
@@ -74,6 +75,9 @@
     height: 60px;
     width: 100%;
     margin-top: 2%;
+    -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
 }
   
 .accountMiddleFormContainer{
@@ -159,7 +163,9 @@
 }
 
 @media screen and (max-width: 450px) {
-   
+    .accountLoginContainer{
+        width: 82%;
+    }
     .or{
         margin: 0 4%;
     }

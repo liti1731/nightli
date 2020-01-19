@@ -64,8 +64,8 @@
         Fixed Navigation
         ==================================== -->
 		<header id="navigation" class="navbar-fixed-top navbar">
-			<div class="container-fluid navigation-container">
-				<div class="navbar-header">
+			<div class="navigation-container  container-fluid-labtop">
+				<div class="container-fluid navbar-header">
 					<!-- responsive nav button -->
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 						<span class="sr-only">Toggle navigation</span>
@@ -110,14 +110,15 @@
         ==================================== -->
 
 	<section id="businessLanding" class='businessLanding box'>
-	  <div class='container-fluid'>
-		<div class='businessText'>
+	  <div class='container-fluid row'>
+		<div class='businessText  col-12 col-sm-8 col-md-6'>
 			<h1>Welcome nightclubs!</h1>
 			<p>Is the app easy-to-use and have the features my business need? See for yourself! We offer 30 days of free
 				testing and a friendly support that will help you get started. </p>
+				<a href='#contact'><button class='demo'>Request free demo</button></a>
 		</div>
-	  </div>
-		<a href='#contact'><button class='demo'>Request free demo</button></a>
+		
+	    </div>
 	</section>
 
 	<!--
@@ -172,10 +173,9 @@
 		Contact section
 		==================================== -->
 	<section id="contact" class="contact box">
-		<div class='container-fluid'>
+		<div class='container-fluid contactContainer'>
 			<h2>Contact us</h2>
 			<p>Send us a message!</p>
-			<img src='./img/page/about/hedwig2.png'>
 			<form class='contactForm'>
 				<input class='contactItem contactName formSpace' type="text" placeholder="Name*">
 				<div class='ContactFormContainer'>
@@ -184,8 +184,8 @@
 				</div>
 				<input type="text" class='contactItem contactContent formSpace' placeholder="How can we help you?">
 				<button type="submit">Submit</button>
-
 			</form>
+			<img class='col-lg-4 col-md-5' src='./img/page/about/hedwig2.png'>
 		</div>
 	</section>
 	<!--
@@ -198,11 +198,13 @@
 		<div class='container-fluid'>
 			<h2>Business account</h2>
 			<P>Use nightli™️ to manage your business directly</P>
-			<div class='buttonContainer'>
-				<a href='#'><button class="login accountButton">
+			  <div class="row">
+				<div class='buttonContainer justify-content-center  col-md-6 col-sm-10'>
+				<a href='#'><button class="login accountButton loginMargin">
 						<h3>Login</h3>
 					</button></a>
-			</div>
+			   </div>
+			  </div>
 		</div>
 	</section>
 	<!--
@@ -213,64 +215,63 @@
         ====================================-->
 		<footer id="footer" class="footer">
 
-			<div class="row">
-	
-				<!-- <div class="col-md-3 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms">
-						</div> -->
-	
-				<div class="col-md-2 col-sm-6 col-xs-6 wow fadeInUp animated" data-wow-duration="500ms"
-					data-wow-delay="300ms">
-					<a href='https://tribed.eu/'>
-						<div class="footer-single footer-logo">
-							<img src="img/footer-logo.png">
-							<br>
-						</div>
-					</a>
-				</div>
-	
-	
-	
-				<!-- footer social links -->
-				<!-- <div class=" wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms"> -->
-	
-				<div class="footerTextContainer">
-					<a href="#">
-						<p>Contact us</p>
-					</a>
-					<a href="#">
-						<p>Terms & conditions</p>
-					</a>
-					<a href="#">
-						<p>GDPR & Cookie Policy</p>
-					</a>
-					<!-- </div> -->
-					<!-- end footer social links -->
-	
-					<p class="copyright right1">Copyright © 2019 <a href="http://tribed.eu/">Tribed Community AB</a>.</p>
-					<p class="copyright right2">All rights reserved.</p>
-				</div>
-	
-	
-				<!-- <div class="col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
-	
-	
-						</div> -->
-	
-	
-				<!-- <div class="row">
-						<div class="col-md-12">
-						</div>
-					</div> -->
-				<div class="socialMediaContainer">
-					<a href="https://www.linkedin.com/company/15871568" style=" margin-right: 5px;"><i
-							class="fa fa-linkedin fa-2x"></i></a><br>
-					<a href="https://www.instagram.com/nightli_points" style=" margin-right: 5px;"><i
-							class="fa fa-instagram fa-2x"></i></a><br>
-					<a href="https://www.facebook.com/Nightli.TM" style=" margin-right: 5px;"><i
-							class="fa fa-facebook fa-2x b"></i></a>
-				</div>
-	
-		</footer>
+			<div class="footerContainer container-fluid">
+				 <!-- <div class="col-md-3 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms">
+						 </div> -->
+	 
+				 <div class="footerSpacing col-md-2 col-3 wow fadeInUp animated" data-wow-duration="500ms"
+					 data-wow-delay="300ms">
+					 <a href='https://tribed.eu/'>
+						 <div class="footer-single footer-logo">
+							 <img src="img/footer-logo.png">
+							 <br>
+						 </div>
+					 </a>
+				 </div>
+	 
+	 
+	 
+				 <!-- footer social links -->
+				 <!-- <div class=" wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms"> -->
+	 
+				 <div class="footerTextContainer">
+					 <a href="#">
+						 <p>Contact us</p>
+					 </a>
+					 <a href="#">
+						 <p>Terms & conditions</p>
+					 </a>
+					 <a href="#">
+						 <p>GDPR & Cookie Policy</p>
+					 </a>
+					 <!-- </div> -->
+					 <!-- end footer social links -->
+	 
+					 <p class="copyright right1">Copyright © 2019 <a href="http://tribed.eu/">Tribed Community AB</a>.</p>
+					 <p class="copyright right2">All rights reserved.</p>
+				 </div>
+	 
+	 
+				 <!-- <div class="col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
+	 
+	 
+						 </div> -->
+	 
+	 
+				 <!-- <div class="row">
+						 <div class="col-md-12">
+						 </div>
+					 </div> -->
+				 <div class="socialMediaContainer">
+					 <a href="https://www.linkedin.com/company/15871568" style=" margin-right: 5px;"><i
+							 class="fa fa-linkedin fa-2x"></i></a><br>
+					 <a href="https://www.instagram.com/nightli_points" style=" margin-right: 5px;"><i
+							 class="fa fa-instagram fa-2x"></i></a><br>
+					 <a href="https://www.facebook.com/Nightli.TM" style=" margin-right: 5px;"><i
+							 class="fa fa-facebook fa-2x b"></i></a>
+				 </div>
+			 </div>
+		 </footer>
 	<a href="javascript:void(0);" id="back-top" style="color: #ffffff"><i class="fa fa-angle-up fa-3x"></i></a>
 
 	<!-- Essential jQuery Plugins
