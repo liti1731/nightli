@@ -3,7 +3,7 @@
  Account signup
 ==========================================*/
 #goBack{
-  margin-top: 5%;
+  margin-top: 1%;
   margin-left: 15%;
   display:block;
   cursor: pointer;
@@ -44,8 +44,8 @@
 }
 
 .accountLoginContainer{
-    max-width: 400px;
-    margin:0 auto;
+    max-width: 350px;
+    margin:-50px auto;
 }
 .accountLoginContainer h2{
     margin-top: 5%;
@@ -72,7 +72,7 @@
     float: left;
     margin:0;
     margin-top: 9px;
-    margin-bottom: 8%;
+    margin-bottom: 3%;
 }
 .or{ 
     float: left;
@@ -82,14 +82,19 @@
 
 
 .accountItem{
-    margin-bottom: 3%;
-    height: 60px;
     width: 100%;
-    margin-top: 2%;
-    -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
+    height: 60px;
+    margin:0 auto;
+    border: none;
+    padding: 10px 0px 10px 15px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 250ms ease-in-out;
+    margin-top: 5%;
+    /* background-color:transparent;
+    border: solid 1.3px white; */
 }
+
   
 .accountMiddleFormContainer{
     overflow: hidden;
@@ -142,7 +147,7 @@
 }
 #hr1{
     margin-top:8% ;
-    margin-bottom:8% ;
+    margin-bottom:6% ;
  }
  
 #hr2{

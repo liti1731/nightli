@@ -13,7 +13,7 @@
     background-position: 50% 50%;
   }
   .businessText{
-      margin-top: 7%;
+      margin-top: 7vh;
       color: white;
       padding:0;
   }
@@ -187,9 +187,14 @@ contact
   .contactItem{
     margin-bottom: 3%;
     outline: none;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    border-radius: 15px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+  
+    /* border: none;
+    cursor: pointer;
+    background-color:transparent;
+    border: solid 1.3px white; */
   }
   .contactName{
     height: 40px;
@@ -206,9 +211,8 @@ contact
     margin-left: 3%;
   }
   .contactContent{
-    height: 200px;
+    padding:10px 0 120px 15px ;
     width: 100%;
-    
   }
   @media screen and (max-width: 767px) {
     .contact img{
@@ -232,6 +236,9 @@ contact
    .contact{
      height: 650px;
    }
+   .contactPhone{
+    margin-left: 2%;
+  }
   }
 /*=========================================
 Business Account
@@ -240,8 +247,13 @@ Business Account
     background-color: #32313A;
     min-height: 90vh !important;
   }
+  .businessAccount h2{
+    text-align: center;
+    margin-top: 15vh !important;
+ }
   .businessAccount p{
      color: white;
+     text-align: center;
   }
   
   .buttonContainer p{
@@ -254,6 +266,6 @@ Business Account
     cursor: pointer;
   }
 .loginMargin{
-  margin-top: 20vh !important;
+  margin-top: 15% !important;
 }
   

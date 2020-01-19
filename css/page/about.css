@@ -283,9 +283,14 @@ contact
 .contactItem{
   margin-bottom: 3%;
   outline: none;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+
+   /* border: none;
+    cursor: pointer;
+    background-color:transparent;
+    border: solid 1.3px white; */
 }
 .contactName{
   height: 40px;
@@ -302,7 +307,7 @@ contact
   margin-left: 3%;
 }
 .contactContent{
-  height: 200px;
+  padding:10px 0 120px 15px ;
   width: 100%;
   
 }
@@ -328,6 +333,9 @@ contact
  .contact{
    height: 650px;
  }
+ .contactPhone{
+  margin-left: 2%;
+}
 }
 
 /*=========================================
