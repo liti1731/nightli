@@ -286,8 +286,8 @@ contact
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   border-radius: 25px;
-
-   /* border: none;
+  border: none;
+   /* 
     cursor: pointer;
     background-color:transparent;
     border: solid 1.3px white; */
