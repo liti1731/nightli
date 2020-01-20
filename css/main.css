@@ -367,6 +367,11 @@ body > section,
     margin-left: 28%;
   }
 }
+@media screen and (max-width: 320px) {
+  .businessButtonBackground{
+    margin-left: 26%;
+  }
+}
 /*=========================================
 Landing
 ==========================================*/

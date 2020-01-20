@@ -171,12 +171,21 @@
     .accountLoginContainer{
         width: 82%;
     }
-    .or{
-        margin: 0 4%;
+}
+@media screen and (max-width: 400px) {
+
+       .checkBoxButton{
+           margin-left: 25%;
+       }
+      
+   }
+@media screen and (max-width: 350px) {
+
+ .or{
+        margin: 0 6%;
     }
     .checkBoxButton{
         margin-left: 20%;
     }
    
 }
-
