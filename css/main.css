@@ -307,12 +307,13 @@ body > section,
 }
 .navbar-toggle{
   margin-right: 0;
+  padding-right: 0;
 }
 
 @media screen and (max-width: 768px) {
-  .container-fluid-laptop{
+  /* .container-fluid-laptop{
     padding: 0 8%;
-  }
+  } */
   .collapse.in.navbar-collapse {
     border-style: solid;
     border-color: #fff;
@@ -353,12 +354,19 @@ body > section,
       margin-right:0;
     }
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 500px) {
   .navbar-brand{
       margin-left:5%;
   }
+  .businessButtonBackground{
+    margin-left: 30%;
+  }
 }
-
+@media screen and (max-width: 350px) {
+  .businessButtonBackground{
+    margin-left: 28%;
+  }
+}
 /*=========================================
 Landing
 ==========================================*/
@@ -895,7 +903,8 @@ footer
 }
 
 .footer-single img {
-    width: 55px;
+    max-width: 55px;
+    width: 100%;;
     margin-bottom: 4px;
 }
 
