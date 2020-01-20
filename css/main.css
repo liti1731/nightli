@@ -403,6 +403,7 @@ Landing
   color: white;
   margin-top: 10%;
 }
+.landingContainer {overflow: hidden;}
 .itemsOnLanding h1{
   font-size: 5vw;
   font-weight: bold;
@@ -412,7 +413,7 @@ Landing
   font-size: 2vw;
 }
 .downloadButtons{
- margin-left: 75%;
+float: right;
  margin-top: 15%;
  padding-right: 0;
 }
@@ -427,7 +428,16 @@ Landing
   
 }
 
-
+@media screen and (min-width: 1280px) {
+ #landing{
+   min-height: 800px;
+ }
+}
+@media screen and (min-width: 1900px) {
+  #landing{
+    min-height: 1000px;
+  }
+ }
 @media screen and (max-width: 1200px) {
   .itemsOnLanding h1{
     font-size: 6vw;
@@ -731,7 +741,9 @@ Landing
     margin-bottom: 10%;
   }
   
- 
+  .nightlifeSpacing{
+    margin-left: 0;
+  }
   .nightlifeDropdown{
     display: block;
     margin-top: 5%;
