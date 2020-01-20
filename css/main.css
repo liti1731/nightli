@@ -469,6 +469,11 @@ float: right;
   }
   
 }
+@media screen and (max-width: 600px) {
+  .downloadButtons{
+    margin-top: 20%;
+  }
+}
 @media screen and (max-width: 520px) {
   .itemsOnLanding{
     top: 12%;
